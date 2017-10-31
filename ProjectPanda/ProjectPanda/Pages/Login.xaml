@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectPanda.Pages.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Button Text="Login" 
+                HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="Center"
+                    WidthRequest="134"
+                    HeightRequest="50"     
+                    
+             />
+
+            <Button Text="Sign up" HorizontalOptions="Center"
+                    VerticalOptions="Center" 
+                    WidthRequest="134"
+                    HeightRequest="50"
+                           
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

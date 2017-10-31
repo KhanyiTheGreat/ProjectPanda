@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectPanda.Pages.PaymentHistory">
+    <ContentPage.Content>
+       
+        <!--This is code for the payment history of a particualr user-->
+
+        <StackLayout>
+            <Label Text="Payment history" HorizontalOptions="Center" FontSize="Medium"/>
+
+            <!--This will be a list pulled from the database on the customers payment history and the medicine name purchased  -->
+            <!--As well as showing weather it was made by the medical aid or off the card-->
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

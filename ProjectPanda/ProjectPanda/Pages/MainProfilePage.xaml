@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectPanda.Pages.MainProfilePage"
+              xmlns:page="clr-namespace:ProjectPanda.Views"    
+             >
+    <ContentPage.Content>
+        <!--SideMenu details-->
+        <MasterDetailPage.Master>
+            <ContentPage Padding="10" BackgroundColor="Gray" Title="Menu" Icon="" >
+                <ContentPage.Content>
+                    <StackLayout >
+                        <Label Text="Menu" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
+
+                        <StackLayout.Resources>
+                            <ResourceDictionary>
+
+                                <Style TargetType="Button">
+
+                                    <Setter Property="VerticalOptions" Value="Center" />
+
+
+                                </Style>
+
+                            </ResourceDictionary>
+                        </StackLayout.Resources>
+
+
+                        <Button x:Name="Menu_btn3" 
+                              Text="Payments" 
+                              BackgroundColor="LightGreen" 
+                              Clicked="Menu_btn3_Clicked"  
+                              WidthRequest="222" 
+                              HeightRequest="54"
+                              HorizontalOptions="Center" 
+                              VerticalOptions="Center" 
+                             BorderColor="Black"
+                              >
+                            <Button.Image>
+                                <!--The following is the xaml code for the google button-->
+                                <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="" 
+                                Android=""
+                                WinPhone="" />
+                            </Button.Image>
+
+
+                        </Button>
+
+
+                        <Button x:Name="Menu_btn2"
+                                Text="Settings"
+                                BackgroundColor="LightGreen" 
+                                Clicked="Menu_btn2_Clicked" 
+                                WidthRequest="222" 
+                                HeightRequest="54"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"      
+                               BorderColor="Black"
+                         >
+                            <Button.Image>
+                                <!--The following is the xaml code for the google button-->
+                                <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="" 
+                                Android=""
+                                WinPhone="" />
+                            </Button.Image>
+
+                        </Button>
+
+
+                        <Button x:Name="Menu_btn4" 
+                                Text="Contact us"
+                                BackgroundColor="LightGreen"
+                                Clicked="Menu_btn4_Clicked" 
+                                WidthRequest="222"
+                                HeightRequest="54"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                               BorderColor="Black"
+                                >
+                            <Button.Image>
+                                <!--The following is the xaml code for the google button-->
+                                <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="" 
+                                Android=""
+                                WinPhone="" />
+                            </Button.Image>
+
+                        </Button>
+
+
+                        <Button Text="Log out" HorizontalOptions="Center" BackgroundColor="LightGreen" BorderColor="Black" Clicked="Logout"/>
+
+                    </StackLayout>
+                </ContentPage.Content>
+            </ContentPage>
+        </MasterDetailPage.Master>
+
+        <MasterDetailPage.Detail>
+
+            <TabbedPage>
+
+                <TabbedPage.Children>
+
+                    <page:ProfilePage Title="Profile"
+                                      
+                     />
+
+                    <page:MyAppointments Title="My Appoitments"
+                                         
+                     />
+
+                    <page:Delivery Title="Delivery"
+                                   
+                    />
+
+                    <page:CamPage Icon="" 
+                                  
+                    />
+
+                </TabbedPage.Children>
+
+            </TabbedPage>
+        </MasterDetailPage.Detail>
+        
+    </ContentPage.Content>
+</MasterDetailPage>

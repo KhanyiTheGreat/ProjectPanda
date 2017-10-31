@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectPanda.Views.ProfilePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="LimeGreen">
+
+                <Image Source="userIcon.png" HorizontalOptions="Center" HeightRequest="100" WidthRequest="200" Aspect="AspectFit" x:Name="userIcon"/>
+                <!--The above will be the profile picture placement-->
+
+                <Label Text="The users name" HorizontalOptions="Center"  BackgroundColor="Gray"/>
+                <Label Text=""/>
+                <Label Text=""/>
+                <!--the above will be the the white space that will make things look better and spaced out-->
+
+                <Frame OutlineColor="Black">
+                    <Label Text="Medical aid:"
+                          TextColor="Black"
+                           BackgroundColor="Gray"
+                           />
+                </Frame>
+
+
+                <Label Text=""/>
+
+
+                <Frame OutlineColor="Black">
+                    <Label Text="Blood type:"
+                   TextColor="Black"
+                    BackgroundColor="Gray"
+                    />
+                    <!--next to this will go the users blood type as a string input-->
+                </Frame>
+
+                <Label Text=""/>
+
+                <!--another white space to allow for the better readablity-->
+
+                <Frame OutlineColor="Black">
+                    <Label Text="Doctor:"
+                   BackgroundColor="Gray"
+                   TextColor="Black"
+                   />
+                </Frame>
+                <!--The string input for the users frequently used doctor goes here-->
+                <Label Text=""/>
+
+                <!--more white space-->
+                <Frame>
+                    <Label Text="Hospital"
+                   TextColor="Black"
+                    BackgroundColor="Gray"
+                    />
+                </Frame>
+
+                <!--the users favorite hospital-->
+                <Label Text=""/>
+
+                <!--more white space-->
+
+                <Frame OutlineColor="Black">
+                    <Label Text="chroinc disease:"
+                   TextColor="Black"
+                   BackgroundColor="Gray"
+                    />
+                </Frame>
+
+                <!--The users chronic diseases go here-->
+                <Label Text=""/>
+
+
+                <!-- more white spaces for readabilty-->
+                <Frame OutlineColor="Black">
+                    <Label Text="medicine(s) taken:"
+                        TextColor="Black"
+                        BackgroundColor="Gray"    
+                    />
+                </Frame>
+
+                <!--the users list prescriptions go here the maximum being 10, so an array here-->
+
+                <Label Text=""/>
+
+                <Frame OutlineColor="Black">
+                    <Label Text="Next delivery:"
+                   TextColor="Black"
+                   BackgroundColor="Gray"
+                    />
+                </Frame>
+
+                <!--the information from delivery will be put as a string here as a date and time and location-->
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

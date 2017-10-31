@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectPanda.Views.NewDoctorList">
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Name" FontSize="Medium"/>
+            <Entry Text="{Binding DocAvaliable.Name}" FontSize="Small"/>
+            <Label Text="DocVaristy" FontSize="Small"/>
+            <Editor Text="{Binding DocAVliable.DocVarsity}" FontSize="Small" Margin="0"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
