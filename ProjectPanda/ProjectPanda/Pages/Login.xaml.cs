@@ -16,5 +16,12 @@ namespace ProjectPanda.Pages
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void SignUpPromp(object sender, EventArgs e)
+        {
+
+            
+        }
+
+    }
 }

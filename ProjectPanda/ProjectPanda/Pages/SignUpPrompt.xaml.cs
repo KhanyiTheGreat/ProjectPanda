@@ -16,5 +16,10 @@ namespace ProjectPanda.Pages
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void backbutton(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Login());
+        }
+    }
 }
