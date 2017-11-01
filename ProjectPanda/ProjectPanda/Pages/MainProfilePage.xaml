@@ -10,41 +10,26 @@
             <ContentPage Padding="10" BackgroundColor="Gray" Title="Menu" Icon="" >
                 <ContentPage.Content>
                     <StackLayout >
-                        <Label Text="Menu" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label Text="Menu" HorizontalOptions="Center" VerticalOptions="Center" />
 
 
 
-                        <StackLayout.Resources>
-                            <ResourceDictionary>
-
-                                <Style TargetType="Button">
-
-                                    <Setter Property="VerticalOptions" Value="Center" />
-
-
-                                </Style>
-
-                            </ResourceDictionary>
-                        </StackLayout.Resources>
+                        
 
 
                         <Button x:Name="Menu_btn3" 
-                              Text="Payments" 
+                             Text="Payments" 
                               BackgroundColor="LightGreen" 
-                              Clicked="Menu_btn3_Clicked"  
+                               BorderWidth="2"
                               WidthRequest="222" 
                               HeightRequest="54"
                               HorizontalOptions="Center" 
                               VerticalOptions="Center" 
                              BorderColor="Black"
+                              TextColor="Black"
+                              Clicked="Menu_btn3_Clicked" 
                               >
-                            <Button.Image>
-                                <!--The following is the xaml code for the google button-->
-                                <OnPlatform x:TypeArguments="FileImageSource"
-                                iOS="" 
-                                Android=""
-                                WinPhone="" />
-                            </Button.Image>
+                          
 
 
                         </Button>
@@ -53,46 +38,40 @@
                         <Button x:Name="Menu_btn2"
                                 Text="Settings"
                                 BackgroundColor="LightGreen" 
-                                Clicked="Menu_btn2_Clicked" 
+                                BorderWidth="2"
                                 WidthRequest="222" 
                                 HeightRequest="54"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center"      
                                BorderColor="Black"
+                                Margin="20"
+                                TextColor="Black"
+                                Clicked="Menu_btn2_Clicked"
                          >
-                            <Button.Image>
-                                <!--The following is the xaml code for the google button-->
-                                <OnPlatform x:TypeArguments="FileImageSource"
-                                iOS="" 
-                                Android=""
-                                WinPhone="" />
-                            </Button.Image>
+                           
 
                         </Button>
 
 
                         <Button x:Name="Menu_btn4" 
-                                Text="Contact us"
+                                 Text="Contact us"
                                 BackgroundColor="LightGreen"
-                                Clicked="Menu_btn4_Clicked" 
+                               BorderWidth="2"
                                 WidthRequest="222"
                                 HeightRequest="54"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center"
                                BorderColor="Black"
+                                Margin="20"            
+                                TextColor="Black"
+                                Clicked="Menu_btn4_Clicked"
                                 >
-                            <Button.Image>
-                                <!--The following is the xaml code for the google button-->
-                                <OnPlatform x:TypeArguments="FileImageSource"
-                                iOS="" 
-                                Android=""
-                                WinPhone="" />
-                            </Button.Image>
+                            
 
                         </Button>
 
 
-                        <Button Text="Log out" HorizontalOptions="Center" BackgroundColor="LightGreen" BorderColor="Black" Clicked="Logout"/>
+                    <Button Text="Log out" HorizontalOptions="Center" BackgroundColor="LightGreen" BorderColor="Black" BorderWidth="2" Margin="20" TextColor="Black"  Clicked="Logout"/>
 
                     </StackLayout>
                 </ContentPage.Content>

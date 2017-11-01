@@ -3,32 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectPanda.Pages.Settings">
     <ContentPage.Content>
-        <StackLayout>
-            <Image>
-                HorizontalOptions="Center" HeightRequest="100" WidthRequest="200" Aspect="AspectFit" x:Name="userIcon"
-            </Image>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" >
 
-            <Frame OutlineColor="Black" >
-                <Entry Text="User Name" BackgroundColor="White" HorizontalOptions="Center"/>
-            </Frame>
+                                                <!--Current Profile picture-->
+
+                <Entry  BackgroundColor="White" HorizontalOptions="Center" WidthRequest="220" HeightRequest="35"  TextColor="Black" />
+
 
             <!--Some margining needs to be aaplied in order to make it look more like the mock ups-->
 
-            <Frame>
-                <Entry Text="Blood type" BackgroundColor="White" HorizontalOptions="Center"/>
-            </Frame>
 
-            <Frame>
-                <Entry Text="Medical aid" BackgroundColor="White" HorizontalOptions="Center"/>
-            </Frame>
+            <Entry
+                       BackgroundColor="White" 
+                       HorizontalOptions="Center"
+                       WidthRequest="220"
+                       HeightRequest="35"
+                       Placeholder="Blood type" 
+                       TextColor="Black" 
+                       PlaceholderColor="Black"
+                       FontSize="Medium"
+                       />
 
-            <Label Text="Distance" FontSize="Large" HorizontalOptions="Center" TextColor="Black"/>
 
-            <Label Text=" Kilometers" HorizontalOptions="Start"/>
 
-            <Switch/>
+            <Entry  
+                       BackgroundColor="White"
+                       HorizontalOptions="Center" 
+                       WidthRequest="220" 
+                       HeightRequest="35" 
+                       Placeholder="Medical aid"
+                       TextColor="Black" 
+                       PlaceholderColor="Black"
+                       
+                       />
 
-            <Button Text="Save" HorizontalOptions="Center" BorderColor="Black"/>
+
+            <Label Text="Distance" FontSize="Large" HorizontalOptions="Center" TextColor="Black" Margin="10"/>
+
+            <Label Text=" Kilometers" HorizontalOptions="Start" TextColor="GhostWhite"/>
+
+            <Slider/>
+
+            <Button Text="Save" HorizontalOptions="Center" BorderColor="Black" Margin="10"/>
 
         </StackLayout>
     </ContentPage.Content>
