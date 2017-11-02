@@ -47,6 +47,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Settings.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\SignInPrompt.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\SupportPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -174,5 +177,8 @@
     <None Include="$(MSBuildThisFileDirectory)Icons\Icon.png" />
     <None Include="$(MSBuildThisFileDirectory)Icons\mail_login.png" />
     <None Include="$(MSBuildThisFileDirectory)Icons\Outlook_login.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\SignInPrompt.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
