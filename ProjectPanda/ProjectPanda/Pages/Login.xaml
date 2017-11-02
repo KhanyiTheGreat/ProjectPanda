@@ -3,29 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectPanda.Pages.Login"
              BackgroundColor="#0ed145"
+             
              >
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center"  >
 
 
 
-            <Button BorderColor="Black" BackgroundColor="White" HorizontalOptions="StartAndExpand"  BorderRadius="20" WidthRequest="300" HeightRequest="55" Margin="10" BorderWidth="2">
-
+            <Button BorderColor="Black" BackgroundColor="White" HorizontalOptions="StartAndExpand"  BorderRadius="20" WidthRequest="300" HeightRequest="55" Margin="10" BorderWidth="2" Clicked="GoogleSignIn">
+                    
             </Button>
 
 
-            <Button BorderColor="Black" BackgroundColor="White" HorizontalOptions="StartAndExpand" BorderRadius="20" WidthRequest="300" HeightRequest="55" Margin="10" BorderWidth="2">
+            <Button BorderColor="Black" BackgroundColor="White" HorizontalOptions="StartAndExpand" BorderRadius="20" WidthRequest="300" HeightRequest="55" Margin="10" BorderWidth="2" Clicked="FacebookSignIn">
         
             </Button>
 
 
-            <Button BorderColor="Black" BackgroundColor="White" HorizontalOptions="StartAndExpand"  BorderRadius="20" WidthRequest="300" HeightRequest="55" Margin="10" BorderWidth="2">
+            <Button BorderColor="Black" BackgroundColor="White" HorizontalOptions="StartAndExpand"  BorderRadius="20" WidthRequest="300" HeightRequest="55" Margin="10" BorderWidth="2" Clicked="OutlookSignIn">
       
             </Button>
 
-
-            <Button BorderColor="Black" BackgroundColor="White" HorizontalOptions="StartAndExpand"  BorderRadius="20" WidthRequest="300" HeightRequest="55" Margin="10" BorderWidth="2">
             
+            <Button BorderColor="Black" BackgroundColor="White" HorizontalOptions="StartAndExpand"  BorderRadius="20" WidthRequest="300" HeightRequest="55" Margin="10" BorderWidth="2" Clicked="OurSignIn">
+                <!--This code should lead to the code that prompts the user to sign up with our services-->
             </Button>
 
 

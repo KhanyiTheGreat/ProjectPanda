@@ -23,5 +23,24 @@ namespace ProjectPanda.Pages
             
         }
 
+        private void GoogleSignIn(object sender, EventArgs e) {
+
+
+        }
+
+        private void FacebookSignIn(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OutlookSignIn(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OurSignIn(object sender, EventArgs e)
+        {
+
+        }
     }
 }

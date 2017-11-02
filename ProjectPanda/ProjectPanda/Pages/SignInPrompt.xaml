@@ -19,7 +19,7 @@
             <Entry Grid.Row="0" Placeholder="User Name" TranslationY="250" Keyboard="Email" PlaceholderColor="Black" HorizontalTextAlignment="Center"/>
 
 
-            <Entry Grid.Row="1" Placeholder="Password" TranslationY="250" PlaceholderColor="Black" IsPassword="False" HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="1" Placeholder="Password" TranslationY="250" PlaceholderColor="Black" IsPassword="True" HorizontalTextAlignment="Center"/>
 
 
         </Grid>

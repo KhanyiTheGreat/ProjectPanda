@@ -19,9 +19,14 @@ namespace ProjectPanda.Droid
 
 			base.OnCreate (bundle);
 
-			global::Xamarin.Forms.Forms.Init (this, bundle);
+            //the following is for authentication
+            global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, bundle);
+
+            global::Xamarin.Forms.Forms.Init (this, bundle);
 			LoadApplication (new ProjectPanda.App ());
-		}
+
+
+        }
 	}
 }
 
