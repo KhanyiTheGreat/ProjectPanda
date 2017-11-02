@@ -3,14 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectPanda.Pages.SupportPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Contact us" HorizontalOptions="Center" FontSize="Large"/>
+        <Grid RowSpacing="100" >
 
-            <Label Text="website: www.RillaSoftworks.com" />
-            <Label/>
-            <Label Text="Telephone: (031) 701 321"/>
-            <Label/>
-            <Label Text="Email: pandamed20@gmail.com"/>
-        </StackLayout>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="400"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="125"/>
+                <RowDefinition  Height="25" />
+                <RowDefinition  Height="25"/>
+                <RowDefinition  Height="25"/>
+                <RowDefinition  Height="25"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.RowSpan="200"  Text="Contact Us" TranslationX="150" TranslationY="50" TextColor="Black" FontSize="Large"/>
+
+
+
+            <Label Grid.Row="1" Grid.Column="1" Text="Facebook: RillaSoftworks" TextColor="Black" />
+
+            <Label Grid.Row="2" Grid.Column="1" Text="Twitter: @RillaEver" TextColor="Black"/>
+
+            <Label Grid.Row="3" Grid.Column="1" Text="Email: pandamed20@gmail.com" TextColor="Black"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
