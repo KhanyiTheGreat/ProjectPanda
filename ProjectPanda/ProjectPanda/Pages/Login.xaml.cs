@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ProjectPanda.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,7 +12,9 @@ namespace ProjectPanda.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Login : ContentPage
 	{
-		public Login ()
+        
+
+        public Login ()
 		{
 			InitializeComponent ();
 		}
@@ -23,8 +25,11 @@ namespace ProjectPanda.Pages
             
         }
 
-        private void GoogleSignIn(object sender, EventArgs e) {
+         private void GoogleSignIn(object sender, EventArgs e) {
 
+
+            AuthenticationGoogle google = new AuthenticationGoogle();
+            google.OnLoginClicked();
 
         }
 

@@ -53,7 +53,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\SupportPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Services\Authentication.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\AuthenticationGoogle.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\AzureDataStore2.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore2.cs" />
