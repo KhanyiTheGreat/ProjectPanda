@@ -10,7 +10,7 @@ using Xamarin.Forms;
 using ProjectPanda.Pages;
 namespace ProjectPanda.Services
 {
-    public partial class AuthenticationGoogle
+    public  class AuthenticationGoogle
     {
 
         Account account;
