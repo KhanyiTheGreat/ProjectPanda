@@ -113,6 +113,32 @@ namespace ProjectPanda.Services
         {
             // the authentication code for microsoft services will go here
 
+            OAuth2Authenticator authenticator = new OAuth2Authenticator(
+              "136133043698809",
+              null,
+              "profile",
+              new Uri("https://m.facebook.com/dialog/oauth/"),
+              new Uri("http://www.facebook.com/connect/login_success.html"),
+              new Uri("http://projectpanda.azurewebsites.net"),
+              null,
+              true);
+
+
+
+            authenticator.Completed += (sender, EventArgs) =>
+            {
+
+                if (EventArgs.IsAuthenticated)
+                {
+                    //I dont understand the use of using eventArgs.Account yet to do more complex things for now
+                }
+                else
+                {
+                    //the code for if the user cancels the authentication process
+                }
+
+            };
+
 
         }
 
