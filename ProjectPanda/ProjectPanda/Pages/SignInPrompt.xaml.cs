@@ -26,5 +26,11 @@ namespace ProjectPanda.Pages
 
             await Navigation.PushAsync(new Login());
         }
+
+
+        async void ContactUs(object sender, EventArgs e) {
+
+            await Navigation.PushAsync(new SupportPage());
+        }
     }
 }
