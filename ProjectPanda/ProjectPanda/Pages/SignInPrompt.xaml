@@ -5,25 +5,50 @@
              BackgroundColor="#92da69"
              >
     <ContentPage.Content>
-       
-        <Grid BackgroundColor="#92da69">
 
-
-
+        <Grid >
             <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="80" />
             </Grid.RowDefinitions>
+            <StackLayout>
+                <Label HorizontalOptions="Center" Text="ProjectPanda" FontSize="33" />
+            </StackLayout>
+            <Grid Grid.Row="1" Margin="20,0,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Image Source="LOGO.jpg" HeightRequest="70"  VerticalOptions="End"/>
+                <Entry Grid.Row="1" Placeholder="Email Address" PlaceholderColor="Black" FontSize="16"/>
+                <Entry Grid.Row="2" Placeholder="Password" IsPassword="True" PlaceholderColor="Black" FontSize="16"/>
+                <Button Text="Log In" Clicked="Button_Clicked" BackgroundColor="#229122" TextColor="White" HeightRequest="50" VerticalOptions="Center"  Grid.Row="3"/>
+                <Label Text="Having problems contact us" HorizontalOptions="Center" Grid.Row="4" Margin="0,10,0,0" FontSize="15"/>
+                <Grid Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                    <Label Text="OR" Grid.Column="1" VerticalOptions="Center" Margin="10,0,10,0" />
+                    <Label Grid.Column="2" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
 
-
-            <Entry Grid.Row="0" Placeholder="User Name" TranslationY="250" Keyboard="Email" PlaceholderColor="Black" HorizontalTextAlignment="Center"/>
-
-
-            <Entry Grid.Row="1" Placeholder="Password" TranslationY="250" PlaceholderColor="Black" IsPassword="True" HorizontalTextAlignment="Center"/>
-
+                </Grid>
+                <StackLayout Grid.Row="7" HorizontalOptions="Center" >
+                    <Label HeightRequest="1" />
+                    <Button Text="Dont have an account Sign Up" BackgroundColor="#92da69" Clicked="prompt" />
+                </StackLayout>
+            </Grid>
 
         </Grid>
-
 
     </ContentPage.Content>
 </ContentPage>

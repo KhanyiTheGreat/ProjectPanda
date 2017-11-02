@@ -16,5 +16,15 @@ namespace ProjectPanda.Pages
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        async void prompt(object sender, EventArgs e) {
+
+            await Navigation.PushAsync(new Login());
+        }
+    }
 }

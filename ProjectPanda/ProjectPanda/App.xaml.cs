@@ -12,7 +12,7 @@ namespace ProjectPanda
 		public App ()
 		{
 			InitializeComponent();
-            Current.MainPage = new NavigationPage(new Login());
+            Current.MainPage = new NavigationPage(new SignInPrompt());
         }
 
 		protected override void OnStart ()
