@@ -35,7 +35,8 @@ namespace ProjectPanda.Pages
 
         private void FacebookSignIn(object sender, EventArgs e)
         {
-
+            AuthenticationFacebook facebook = new AuthenticationFacebook();
+            facebook.OnLoginClicked();
         }
 
         private void OutlookSignIn(object sender, EventArgs e)
