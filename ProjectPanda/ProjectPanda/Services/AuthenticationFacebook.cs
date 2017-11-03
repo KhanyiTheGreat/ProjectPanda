@@ -40,20 +40,20 @@ namespace ProjectPanda.Services
             {
                 case Device.iOS:
                     clientId = "136133043698809";
-                    redirectUri = "https://m.facebook.com/dialog/oauth/";
+                    redirectUri = "https://projectpanda.azurewebsites.net/.auth/login/facebook/callback";
                     break;
 
                 case Device.Android:
-                    clientId = "36133043698809";
-                    redirectUri = "https://m.facebook.com/dialog/oauth/";
+                    clientId = "136133043698809";
+                    redirectUri = "https://projectpanda.azurewebsites.net/.auth/login/facebook/callback";
                     break;
             }
 
             OAuth2Authenticator authenticator = new OAuth2Authenticator(
-              "655782672996-f7n91tloeocgksh8dogfuijhpfcre2m1.apps.googleusercontent.com",
+              "136133043698809",
               null,
-              "profile",
-              new Uri("https://m.facebook.com/dialog/oauth/"),
+              "public_profile",
+              new Uri("https://projectpanda.azurewebsites.net/.auth/login/facebook/callback"),
               new Uri("http://www.facebook.com/connect/login_success.htmlt"),
               new Uri("http://projectpanda.azurewebsites.net"),
               null,
