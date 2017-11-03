@@ -32,20 +32,20 @@ namespace ProjectPanda.Services
             {
                 case Device.iOS:
                     clientId = "ddf910c8-6f98-4586-b26e-7b2e06f612a1";
-                    redirectUri = "http://projectpanda.azurewebsites.net";
+                    redirectUri = "https://auth/login/microsoftaccount/callback";
                     break;
 
                 case Device.Android:
                     clientId = "ddf910c8-6f98-4586-b26e-7b2e06f612a1";
-                    redirectUri = "http://projectpanda.azurewebsites.net";
+                    redirectUri = "https://auth/login/microsoftaccount/callback";
                     break;
             }
 
             OAuth2Authenticator authenticator = new OAuth2Authenticator(
               "ddf910c8-6f98-4586-b26e-7b2e06f612a1",
               null,
-              "profile",
-              new Uri("http://projectpanda.azurewebsites.net.auth/login/microsoftaccount/callback"),
+              "wl.basic",
+              new Uri("https://www.auth/login/microsoftaccount/callback"),
               new Uri("http://projectpanda.azurewebsites.net"),
               new Uri("http://projectpanda.azurewebsites.net"),
               null,
@@ -75,8 +75,8 @@ namespace ProjectPanda.Services
             if (e.IsAuthenticated)
             {
                 // If the user is authenticated, request their basic user data from Google
-                // UserInfoUrl = http://projectpanda.azurewebsites.net.azurewebsites.net/.auth/login/microsoftaccount/callback
-                var request = new OAuth2Request("GET", new Uri("http://projectpanda.azurewebsites.net.azurewebsites.net/.auth/login/microsoftaccount/callback"), null, e.Account);
+                // UserInfoUrl = https://projectpanda.azurewebsites.net.azurewebsites.net/.auth/login/microsoftaccount/callback
+                var request = new OAuth2Request("GET", new Uri("http://projectpanda.azurewebsites.net"), null, e.Account);
                 var response = await request.GetResponseAsync();
                 if (response != null)
                 {
