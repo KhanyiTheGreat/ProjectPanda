@@ -14,7 +14,7 @@ namespace ProjectPanda.Services
 
    
 
-    public partial class AuthenticationFacebook
+    public  class AuthenticationFacebook
     {
 
 

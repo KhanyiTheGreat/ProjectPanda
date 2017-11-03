@@ -41,7 +41,8 @@ namespace ProjectPanda.Pages
 
         private void OutlookSignIn(object sender, EventArgs e)
         {
-
+            AuthenticationMicrosoft microsoft = new AuthenticationMicrosoft();
+            microsoft.OnLoginClicked();
         }
 
         private void OurSignIn(object sender, EventArgs e)
