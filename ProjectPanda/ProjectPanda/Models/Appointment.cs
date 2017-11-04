@@ -27,10 +27,10 @@ namespace ProjectPanda.Models
         }
 
 
-        public void BookingBypicker() {
+        protected void BookingBypicker() {
 
             /*
-                    if((doctor) || (date) || (time)|| (location) !SelectedItem){ BookAppointment(); }
+                    if((doctor) || (date) || (time)|| (location) !SelectedItem) { BookAppointment(); }
              
              */
 
@@ -38,7 +38,7 @@ namespace ProjectPanda.Models
         }
 
 
-        public void BookingByLocation() {
+        protected void BookingByLocation() {
 
             /*
 
