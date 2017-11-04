@@ -20,7 +20,7 @@
 
             <!--The drop down selecting menu for selecting a Time-->
 
-            <Button BorderColor="Black" BackgroundColor="Green" Text="Schedule" HorizontalOptions="StartAndExpand" TextColor="Black"/>
+            <Button BorderColor="Black" BackgroundColor="Green" Text="Schedule" HorizontalOptions="StartAndExpand" TextColor="Black" Clicked="schedule"/>
 
 
             <Frame OutlineColor="Black" >

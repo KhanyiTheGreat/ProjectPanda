@@ -29,8 +29,10 @@ namespace ProjectPanda.Views
 
         }
 
-
-
+        private void schedule(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+        }
     }
 
 }

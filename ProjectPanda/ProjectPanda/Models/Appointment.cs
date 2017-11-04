@@ -7,11 +7,22 @@ namespace ProjectPanda.Models
     public class Appointment
 
     {
+      //  public int numberOfBookedAppoinements;
+      //  public int patientsAtPractice;
+
+
 
         public void BookAppointment()
         {
+            /*
+                   
+                    if(Maxdistance =< currentUserLocation ){return DocAvlaible;}
 
-            //This method will be for making an appointment  
+                    if((numberOfBookedAppoinements<patientsAtPractice) && (currentUserLocation =< Maxdistance)){return true;}
+             
+             
+             */
+
         }
 
         public  void CancelAppointment()
