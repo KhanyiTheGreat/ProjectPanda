@@ -23,7 +23,12 @@ namespace ProjectPanda.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init ();
-			LoadApplication (new ProjectPanda.App ());
+
+            //GPs code for Ios
+            Xamarians.GPS.iOS.GPSServiceIOS.Initialize();
+
+
+            LoadApplication (new ProjectPanda.App ());
 
 			return base.FinishedLaunching (app, options);
 		}
