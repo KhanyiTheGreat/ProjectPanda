@@ -31,7 +31,7 @@ namespace ProjectPanda.Views
 
         private void schedule(object sender, EventArgs e)
         {
-            Navigation.PopAsync();
+            //code that should redirect to the appointments clss in the model folder
         }
     }
 

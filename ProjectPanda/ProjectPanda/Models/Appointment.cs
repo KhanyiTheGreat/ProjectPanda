@@ -14,14 +14,7 @@ namespace ProjectPanda.Models
 
         public void BookAppointment()
         {
-            /*
-                   
-                    if(Maxdistance =< currentUserLocation ){return DocAvlaible;}
-
-                    if((numberOfBookedAppoinements<patientsAtPractice) && (currentUserLocation =< Maxdistance)){return true;}
-             
-             
-             */
+           //the code here should push that information over to the cloud for syncrinization so the doctor can refresh to see who is next.
 
         }
 
@@ -32,5 +25,31 @@ namespace ProjectPanda.Models
 
 
         }
+
+
+        public void BookingBypicker() {
+
+            /*
+                    if((doctor) || (date) || (time)|| (location) !SelectedItem){ BookAppointment(); }
+             
+             */
+
+
+        }
+
+
+        public void BookingByLocation() {
+
+            /*
+
+                   if(Maxdistance =< currentUserLocation ){return DocAvlaible;}
+
+                   if((numberOfBookedAppoinements<patientsAtPractice) && (currentUserLocation =< Maxdistance)){return true;}
+
+
+            */
+
+        }
+
     }
 }
