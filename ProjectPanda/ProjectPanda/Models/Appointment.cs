@@ -14,7 +14,16 @@ namespace ProjectPanda.Models
 
         public void BookAppointment()
         {
-           //the code here should push that information over to the cloud for syncrinization so the doctor can refresh to see who is next.
+            //the code here should push that information over to the cloud for syncrinization so the doctor can refresh to see who is next.
+
+            if (BookingBypicker().Equals(!BookingByLocation()))
+            {
+
+                BookingBypicker();
+            }
+            else {
+                BookingByLocation();
+            }
 
         }
 
@@ -27,18 +36,18 @@ namespace ProjectPanda.Models
         }
 
 
-        protected void BookingBypicker() {
+        protected bool BookingBypicker() {
 
             /*
-                    if((doctor) || (date) || (time)|| (location) !SelectedItem) { BookAppointment(); }
+                    if((doctor) || (date) || (time)|| (location) !SelectedItem) { return false; }
              
              */
 
-
+            return false;
         }
 
 
-        protected void BookingByLocation() {
+        protected bool BookingByLocation() {
 
             /*
 
@@ -48,6 +57,8 @@ namespace ProjectPanda.Models
 
 
             */
+
+            return true;
 
         }
 
