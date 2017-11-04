@@ -22,6 +22,10 @@ namespace ProjectPanda.Droid
             //the following is for authentication
             global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, bundle);
 
+
+            //the following is for Gps api call location
+            Xamarians.GPS.Droid.GPSServiceAndroid.Initialize(this);
+
             global::Xamarin.Forms.Forms.Init (this, bundle);
 			LoadApplication (new ProjectPanda.App ());
 
