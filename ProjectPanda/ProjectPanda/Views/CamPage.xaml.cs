@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ProjectPanda.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,10 @@ namespace ProjectPanda.Views
 		public CamPage ()
 		{
 			InitializeComponent ();
-		}
+
+            Camera cameraShot = new Camera();
+
+         
+        }
 	}
 }

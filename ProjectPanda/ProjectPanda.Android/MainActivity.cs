@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Plugin.Permissions;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -27,6 +27,12 @@ namespace ProjectPanda.Droid
 
 
         }
-	}
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+        {
+            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
+    }
 }
 
