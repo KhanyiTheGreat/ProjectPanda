@@ -31,7 +31,7 @@ namespace ProjectPanda.Models
         {
             //This method is for cancelling the already booked appointment
             //this method will have to be overid by the BookAppiontment method
-
+            
 
         }
 
