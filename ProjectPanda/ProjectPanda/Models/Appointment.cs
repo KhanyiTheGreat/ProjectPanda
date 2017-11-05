@@ -14,7 +14,7 @@ namespace ProjectPanda.Models
 
         public void BookAppointment()
         {
-            //the code here should push that information over to the cloud for syncrinization so the doctor can refresh to see who is next.
+            //the code here should push that information over to the cloud for syncrinization so the doctor can refresh to see who is next
 
             if (BookingBypicker().Equals(!BookingByLocation()))
             {
