@@ -3,47 +3,118 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectPanda.Views.MyAppointments">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#92da69">
-            <Label Text="Your have {0} Appontments "/>
-            <!--Code for the binding goes here-->
+       
+        
+        <ScrollView>
 
-            <Frame OutlineColor="Black">
+            <Grid BackgroundColor="#92da69" >
+                <Grid.ColumnDefinitions>
 
-                <Label Text="Set Appointment" BackgroundColor="Gray" HorizontalOptions="Start"/>
+                </Grid.ColumnDefinitions>
 
-            </Frame>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+
+                <Label  Text="Set Appointment" FontSize="20"
+                    BackgroundColor="Gray"  
+                    VerticalTextAlignment="Center"
+                    TextColor="Black" WidthRequest="127"
+                    HeightRequest="27"
+                    HorizontalTextAlignment="Center" 
+                    Grid.Row="0"
+                   Margin="15,10,185,30"
+                   TranslationY="30"     
+                    />
+
+                <Button BackgroundColor="LightGray" 
+                    WidthRequest="23"
+                    HeightRequest="50" 
+                    Text="Doctor"
+                    TextColor="Black"
+                    FontSize="17"
+                    BorderColor="Black" 
+                    BorderWidth="2" 
+                    Margin="15,30,15,0" 
+                    Grid.Row="1"/>
 
 
-            <!--The drop down selecting menu for selecting a doctor will go here-->
+                <Button TextColor="Black"
+                    WidthRequest="23"
+                    HeightRequest="50"
+                    BackgroundColor="LightGray"
+                    Text="Date" FontSize="17" 
+                    BorderColor="Black" 
+                    BorderWidth="2"  
+                    Grid.Row="2"
+                   Margin="15,30,15,0" 
+                    />
 
-            <!--The drop down selecting menu for selecting a date-->
+                <Button TextColor="Black"
+                    WidthRequest="23"
+                    HeightRequest="50"
+                    BackgroundColor="LightGray" 
+                    Text="Time"
+                    FontSize="17"
+                    BorderColor="Black" 
+                    BorderWidth="2"
+                    Margin="15,30,15,0" 
+                    Grid.Row="3"
+                    
+                    />
 
-            <!--The drop down selecting menu for selecting a Time-->
-
-            <Button BorderColor="Black" BackgroundColor="Green" Text="Schedule" HorizontalOptions="StartAndExpand" TextColor="Black" Clicked="schedule"/>
-
-
-            <Frame OutlineColor="Black" >
-
-                <Label Text="Date:" BackgroundColor="Gray"/>
-            </Frame>
-
-
-            <Frame OutlineColor="Black">
-
-                <Label Text="Time:" BackgroundColor="Gray"/>
-
-            </Frame>
-
-
-
-            <!--The following button I am not not sure weather I should actually remove it or not-->
-            <Button 
-                   Text="ViewDoctorList()"
-                    HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand"/>
+                <Button Text="Schedule" 
+                    WidthRequest="105" 
+                    HeightRequest="5" 
+                    TextColor="Black"
+                    BackgroundColor="DarkGreen"
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    HorizontalOptions="Center"
+                    Grid.Row="4"
+                    Margin="0,20"
+                    />
 
 
-        </StackLayout>
+
+
+
+                <Label Text="Next Appointment" 
+                   Grid.Row="5"
+                   FontSize="20" 
+                   TextColor="Black"
+                   VerticalTextAlignment="Center"
+                  HorizontalTextAlignment="Center"
+                      
+                     Margin="15,20,185,20"
+                  BackgroundColor="Gray"         
+                   
+                     />
+
+
+
+                <Label  Text= "Date :" BackgroundColor="DarkGray" TextColor="Black" Margin="15,20,15,20" FontSize="20" Grid.Row="6" VerticalTextAlignment="Center"/>
+
+                <Label Text="Time :" BackgroundColor="DarkGray" TextColor="Black" Margin="15,20,15,20" FontSize="20" Grid.Row="7" VerticalTextAlignment="Center"/>
+
+                <Label Text="Place :" BackgroundColor="DarkGray" TextColor="Black" Margin="15,20,15,20" FontSize="20" Grid.Row="8" VerticalTextAlignment="Center"/>
+
+                <Label Text="Doctor :" BackgroundColor="DarkGray" TextColor="Black" Margin="15,20,15,20" FontSize="20" Grid.Row="9" VerticalTextAlignment="Center"/>
+
+            </Grid>
+
+        </ScrollView>
+   
     </ContentPage.Content>
 </ContentPage>
