@@ -7,16 +7,16 @@ namespace ProjectPanda.Models
     public class Appointment
 
     {
-      //  public int numberOfBookedAppoinements;
-      //  public int patientsAtPractice;
+        public int numberOfBookedAppoinements { get; set; }
+        public int patientsAtPractice { get; set; }
 
-
+        //  numberOfBookeAppoinments=numberOfAppointmentsFromTheCloud;
 
         public void BookAppointment()
         {
             //the code here should push that information over to the cloud for syncrinization so the doctor can refresh to see who is next
 
-            if (BookingBypicker().Equals(!BookingByLocation()))
+            if (BookingBypicker().Equals(!BookingByLocation())) 
             {
 
                 BookingBypicker();
@@ -51,15 +51,15 @@ namespace ProjectPanda.Models
 
             /*
 
-                   if(Maxdistance =< currentUserLocation ){return DocAvlaible;}
+                   if((Maxdistance =< currentUserLocation )&&(numberOfAppointmentsFromTheCloud<patientsAtPractice))
+                   {return DocAvlaible;} 
 
-                   if((numberOfBookedAppoinements<patientsAtPractice) && (currentUserLocation =< Maxdistance)){return true;}
+                  
 
 
             */
 
             return true;
-
         }
 
     }
