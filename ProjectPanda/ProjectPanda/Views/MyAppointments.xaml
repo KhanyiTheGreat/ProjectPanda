@@ -28,7 +28,7 @@
                 </Grid.RowDefinitions>
 
                 <Label  Text="Set Appointment" FontSize="20"
-                    BackgroundColor="Gray"  
+                      
                     VerticalTextAlignment="Center"
                     TextColor="Black" WidthRequest="127"
                     HeightRequest="27"
@@ -97,8 +97,8 @@
                    VerticalTextAlignment="Center"
                   HorizontalTextAlignment="Center"
                       
-                     Margin="15,20,185,20"
-                  BackgroundColor="Gray"         
+                     Margin="15,20,170,20"
+                        
                    
                      />
 
