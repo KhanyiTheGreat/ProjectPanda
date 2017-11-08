@@ -3,49 +3,74 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectPanda.Pages.Settings">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" >
-
-                                                <!--Current Profile picture-->
-
-                <Entry  BackgroundColor="White" HorizontalOptions="Center" WidthRequest="220" HeightRequest="35"  TextColor="Black" />
 
 
-            <!--Some margining needs to be aaplied in order to make it look more like the mock ups-->
+        <ScrollView>
+
+            <Grid BackgroundColor="#92da69" >
+                <Grid.ColumnDefinitions>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+
+                <StackLayout BackgroundColor="DarkGreen" >
+                    <Label Text="Settings" TextColor="Black" HorizontalOptions="Center" Margin="0, 15, 0, 0" FontSize="25" VerticalTextAlignment="Center" />
+                </StackLayout>
 
 
-            <Entry
-                       BackgroundColor="White" 
-                       HorizontalOptions="Center"
-                       WidthRequest="220"
-                       HeightRequest="35"
-                       Placeholder="Blood type" 
-                       TextColor="Black" 
-                       PlaceholderColor="Black"
-                       FontSize="Medium"
-                       />
+                <Image Grid.Row="1" BackgroundColor="Gray" Margin="80,40,80,10"   />
+
+                <StackLayout Grid.Row="2" >
+
+                    <Entry Placeholder="User Name"  PlaceholderColor="Black" Margin="30,20,30,20" VerticalOptions="Start" BackgroundColor="White" HorizontalTextAlignment="Center" Opacity="0.90"/>
+
+                </StackLayout>
 
 
 
-            <Entry  
-                       BackgroundColor="White"
-                       HorizontalOptions="Center" 
-                       WidthRequest="220" 
-                       HeightRequest="35" 
-                       Placeholder="Medical aid"
-                       TextColor="Black" 
-                       PlaceholderColor="Black"
-                       
-                       />
+                <StackLayout Grid.Row="3" >
 
 
-            <Label Text="Distance" FontSize="Large" HorizontalOptions="Center" TextColor="Black" Margin="10"/>
+                    <Entry Placeholder="Blood type" Margin="30,20,30,20" PlaceholderColor="Black"  BackgroundColor="White" HorizontalTextAlignment="Center" Opacity="0.90"/>
 
-            <Label Text=" Kilometers" HorizontalOptions="Start" TextColor="GhostWhite"/>
+                </StackLayout>
 
-            <Slider/>
 
-            <Button Text="Save" HorizontalOptions="Center" BorderColor="Black" Margin="10"/>
+                <StackLayout Grid.Row="4" >
 
-        </StackLayout>
+                    <Entry Placeholder="Medical Aid"  PlaceholderColor="Black" Margin="30,20,30,20" BackgroundColor="White" HorizontalTextAlignment="Center" Opacity="0.90"/>
+
+                </StackLayout>
+
+                <Label Text="Distance" FontSize="25"  TextColor="Black" Margin="130,10,0,10" Grid.Row="5"/>
+
+
+                <StackLayout Grid.Row="7" >
+                    <Label Text=" Kilometers:" TextColor="GhostWhite" Grid.Row="6" Margin="20,0,0,0" FontSize="20"/>
+
+                    <Slider TranslationY="0"/>
+
+                </StackLayout>
+
+            </Grid>
+
+
+        </ScrollView>
+
+
     </ContentPage.Content>
 </ContentPage>
