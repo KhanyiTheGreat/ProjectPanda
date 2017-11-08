@@ -26,14 +26,6 @@ namespace ProjectPanda.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Auth._MobileServices.Resource.Animation.slide_in_right = global::ProjectPanda.Droid.Resource.Animation.slide_in_right;
-			global::Xamarin.Auth._MobileServices.Resource.Animation.slide_out_left = global::ProjectPanda.Droid.Resource.Animation.slide_out_left;
-			global::Xamarin.Auth._MobileServices.Resource.Drawable.ic_arrow_back = global::ProjectPanda.Droid.Resource.Drawable.ic_arrow_back;
-			global::Xamarin.Auth._MobileServices.Resource.Id.webview = global::ProjectPanda.Droid.Resource.Id.webview;
-			global::Xamarin.Auth._MobileServices.Resource.Layout.activity_webview = global::ProjectPanda.Droid.Resource.Layout.activity_webview;
-			global::Xamarin.Auth._MobileServices.Resource.String.ApplicationName = global::ProjectPanda.Droid.Resource.String.ApplicationName;
-			global::Xamarin.Auth._MobileServices.Resource.String.Hello = global::ProjectPanda.Droid.Resource.String.Hello;
-			global::Xamarin.Auth._MobileServices.Resource.String.title_activity_webview = global::ProjectPanda.Droid.Resource.String.title_activity_webview;
 			global::PCLCrypto.Resource.String.ApplicationName = global::ProjectPanda.Droid.Resource.String.ApplicationName;
 			global::PCLCrypto.Resource.String.Hello = global::ProjectPanda.Droid.Resource.String.Hello;
 			global::Xamarians.GPS.Droid.Resource.Animation.abc_fade_in = global::ProjectPanda.Droid.Resource.Animation.abc_fade_in;

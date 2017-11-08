@@ -22,7 +22,14 @@ namespace ProjectPanda.iOS
 		//
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			global::Xamarin.Forms.Forms.Init ();
+
+            // Initialization for Azure Mobile Apps
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+            // This MobileServiceClient has been configured to communicate with the Azure Mobile App and
+            // Azure Gateway using the application url. You're all set to start working with your Mobile App!
+            Microsoft.WindowsAzure.MobileServices.MobileServiceClient ProjectPandaMobileAppService20171016015234Client = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
+            "https://projectpandamobileappservice20171016015234.azurewebsites.net");
+            global::Xamarin.Forms.Forms.Init ();
 
             //GPs code for Ios
             Xamarians.GPS.iOS.GPSServiceIOS.Initialize();
