@@ -231,7 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Connected Services\ProjectPandaMobileAppService20171016015234MobileApp\ConnectedService.json" />
     <None Include="Connected Services\ProjectPandaMobileApp\ConnectedService.json" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
