@@ -22,7 +22,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Appointment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BaseDataObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Camera.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Constraints.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Delivery.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DocAvaliable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\doctorUser.cs" />
@@ -59,6 +58,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\AzureDataStore2.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\PayFast.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AboutViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />

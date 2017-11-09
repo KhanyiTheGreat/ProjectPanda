@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ProjectPanda", "ProjectPanda\ProjectPanda\ProjectPanda.shproj", "{92C4C73A-E492-473B-9E53-2BDDD8C44819}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectPanda.Android", "ProjectPanda\ProjectPanda.Android\ProjectPanda.Android.csproj", "{06E0512A-18D4-4088-9462-CC87C412DDD0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectPanda.iOS", "ProjectPanda\ProjectPanda.iOS\ProjectPanda.iOS.csproj", "{A01031B6-82E0-463A-975B-463DC54CD6B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Code", "Database Code", "{A184F76B-8848-4821-9331-26E43CF75CB7}"
+	ProjectSection(SolutionItems) = preProject
+		Todo.js = Todo.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
