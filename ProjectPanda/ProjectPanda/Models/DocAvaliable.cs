@@ -62,6 +62,11 @@ namespace ProjectPanda.Models
 
 
         };
+
+        internal void Add(DocAvaliable doctorOnCall)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
 
     }
