@@ -1,0 +1,9 @@
+{
+  "name": "mobile-server-code",
+  "version": "0.0.0",
+  "description": "MobileServerCode",
+  "main": "server.js",
+  "author": {
+    "name": "Khanyisani Buthelezi"
+  }
+}
