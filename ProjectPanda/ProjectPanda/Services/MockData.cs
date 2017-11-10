@@ -62,31 +62,7 @@ namespace ProjectPanda.Services
             return Task.FromResult(true);
         }
 
-        public async Task InitializeAsync()
-        {
-            if (isInitialized)
-                return;
-
-            items = new List<Item>();
-            var _items = new List<Item>
-            {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Buy some cat food", Description="The cats are hungry"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Learn F#", Description="Seems like a functional idea"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Learn to play guitar", Description="Noted"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Buy some new candles", Description="Pine and cranberry for that winter feel"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Complete holiday shopping", Description="Keep it a secret!"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Finish a todo list", Description="Done"},
-
-
-            };
-
-            foreach (Item item in _items)
-            {
-                items.Add(item);
-            }
-
-            isInitialized = true;
-        }
+       
         //MyList
         public async Task<bool> AddDoctorsListAsync(DocAvaliable doctorOnCall)
         {
@@ -102,11 +78,7 @@ namespace ProjectPanda.Services
 
             var _doctorOnCall = DoctorOnCallList.Where((DocAvaliable arg) => arg.Id == ).FirstOrDefault();
             DoctorOnCallList.Remove(_doctorOnCall);
-            DoctorOnCallList.Add()
-
-                items.Where((Item arg) => arg.Id == item.Id).FirstOrDefault();
-            items.Remove(_item);
-            items.Add(item);
+            DoctorOnCallList.Add(doctorOnCall);
 
             return await Task.FromResult(true);
         }
@@ -140,8 +112,11 @@ namespace ProjectPanda.Services
         {
             throw new NotImplementedException();
         }
-
-        _doctorOnCall = new List<DocAvaliable>();
+        public async Task InitializeAsync()
+        {
+            if (isInitialized)
+                return;
+            DoctorOnCallList = new List<DocAvaliable>();
             var _doctorOnCall = new List<DocAvaliable>
             {
                 new DocAvaliable {Id = Guid.NewGuid().ToString(), Name="Dr Zulu", Varsity="MBchB(Ukzn)" },
@@ -152,11 +127,11 @@ namespace ProjectPanda.Services
                 new DocAvaliable {Id = Guid.NewGuid().ToString(), Name="Dr 50Cent", Varsity="MBchB(Stellenbosch)" }
             };
 
-            foreach (Item item in _doctorOnCall)
+            foreach(DocAvaliable doctorOnCall in _doctorOnCall)
             {
-                items.Add(item);
+                DoctorOnCallList.Add(doctorOnCall);
             }
-
-    isInitialized = true;
+            isInitialized = true;
+        }
     }
 }
