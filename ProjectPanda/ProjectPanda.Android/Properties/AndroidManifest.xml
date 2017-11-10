@@ -5,18 +5,12 @@
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-	<application android:label="ProjectPanda.Android">
-		<provider android:name="android.support.v4.content.FileProvider" android:authorities="com.companyname.ProjectPanda.fileprovider" android:exported="false" android:grantUriPermissions="true">
-			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
-		</provider>
-	
-
- <intent-filter>
-    <action android:name="android.intent.action.VIEW" />
-    <category android:name="android.intent.category.DEFAULT" />
-    <category android:name="android.intent.category.BROWSABLE" />
-    <data android:scheme="{url_scheme_of_your_app}" android:host="easyauth.callback" />
-  </intent-filter>
-
-</application>
+  <activity android:name="com.microsoft.windowsazure.mobileservices.authentication.RedirectUrlActivity" android:launchMode="singleTop" android:noHistory="true">
+    <intent-filter>
+      <action android:name="android.intent.action.VIEW" />
+      <category android:name="android.intent.category.DEFAULT" />
+      <category android:name="android.intent.category.BROWSABLE" />
+      <data android:scheme="{url_scheme_of_your_app}" android:host="easyauth.callback" />
+    </intent-filter>
+  </activity>
 </manifest>

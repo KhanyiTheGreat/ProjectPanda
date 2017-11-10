@@ -101,7 +101,66 @@ namespace ProjectPanda.Droid
     }
 
     //the following is for google authentication
+    public async Task<bool> AuthenticateGoogle()
+    {
+        var success = false;
+        var message = string.Empty;
+        try
+        {
+            // Sign in with Facebook login using a server-managed flow.
+            user = await TodoItemManager.DefaultManager.CurrentClient.LoginAsync(this,
+                MobileServiceAuthenticationProvider.Google, "{https://www.googleapis.com/auth/plus.me}");
+            if (user != null)
+            {
+                message = string.Format("you are now signed-in as {0}.",
+                    user.UserId);
+                success = true;
+            }
+        }
+        catch (Exception ex)
+        {
+            message = ex.Message;
+        }
 
+        // Display the success or failure message.
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.SetMessage(message);
+        builder.SetTitle("Sign-in result");
+        builder.Create().Show();
+
+        return success;
+    }
+
+    //the following is for microsoft authentication
+    public async Task<bool> AuthenticateMicrosoft()
+    {
+        var success = false;
+        var message = string.Empty;
+        try
+        {
+            // Sign in with Facebook login using a server-managed flow.
+            user = await TodoItemManager.DefaultManager.CurrentClient.LoginAsync(this,
+                MobileServiceAuthenticationProvider.Facebook, "{http://www.microsoft.com}");
+            if (user != null)
+            {
+                message = string.Format("you are now signed-in as {0}.",
+                    user.UserId);
+                success = true;
+            }
+        }
+        catch (Exception ex)
+        {
+            message = ex.Message;
+        }
+
+        // Display the success or failure message.
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.SetMessage(message);
+        builder.SetTitle("Sign-in result");
+        builder.Create().Show();
+
+        return success;
+    }
 
 }
 
