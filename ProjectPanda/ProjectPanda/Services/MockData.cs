@@ -13,56 +13,7 @@ namespace ProjectPanda.Services
     {
         bool isInitialized;
         List<DocAvaliable> DoctorOnCallList;
-
-      
-
-        public async Task<bool> UpdateItemAsync(Item item)
-        {
-            await InitializeAsync();
-
-            var _item = items.Where((Item arg) => arg.Id == item.Id).FirstOrDefault();
-            items.Remove(_item);
-            items.Add(item);
-
-            return await Task.FromResult(true);
-        }
-
-        public async Task<bool> DeleteItemAsync(Item item)
-        {
-            await InitializeAsync();
-
-            var _item = items.Where((Item arg) => arg.Id == item.Id).FirstOrDefault();
-            items.Remove(_item);
-
-            return await Task.FromResult(true);
-        }
-
-        public async Task<Item> GetItemAsync(string id)
-        {
-            await InitializeAsync();
-
-            return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
-        }
-
-        public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
-        {
-            await InitializeAsync();
-
-            return await Task.FromResult(items);
-        }
-
-        public Task<bool> PullLatestAsync()
-        {
-            return Task.FromResult(true);
-        }
-
-
-        public Task<bool> SyncAsync()
-        {
-            return Task.FromResult(true);
-        }
-
-       
+        
         //MyList
         public async Task<bool> AddDoctorsListAsync(DocAvaliable doctorOnCall)
         {
@@ -76,7 +27,7 @@ namespace ProjectPanda.Services
         {
             await InitializeAsync();
 
-            var _doctorOnCall = DoctorOnCallList.Where((DocAvaliable arg) => arg.Id == ).FirstOrDefault();
+            var _doctorOnCall = DoctorOnCallList.Where((DocAvaliable arg) => arg.Id == doctorOnCall.Id).FirstOrDefault();
             DoctorOnCallList.Remove(_doctorOnCall);
             DoctorOnCallList.Add(doctorOnCall);
 
