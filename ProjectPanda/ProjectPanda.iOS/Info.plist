@@ -58,20 +58,10 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>facebook</string>
+			<string>redirectUrl</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>http://www.facebook.com/connect/login_success.html</string>
-			</array>
-			<key>CFBundleURLTypes</key>
-			<string>Viewer</string>
-		</dict>
-		<dict>
-			<key>CFBundleURLName</key>
-			<string>google</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>https://www.googleapis.com/auth/plus.me</string>
+				<string>http://projectpanda.azurewebsites.net</string>
 			</array>
 		</dict>
 	</array>

@@ -10,7 +10,7 @@
       <action android:name="android.intent.action.VIEW" />
       <category android:name="android.intent.category.DEFAULT" />
       <category android:name="android.intent.category.BROWSABLE" />
-      <data android:scheme="{url_scheme_of_your_app}" android:host="easyauth.callback" />
+      <data android:scheme="{http://projectpanda.azurewebsites.net}" android:host="easyauth.callback" />
     </intent-filter>
   </activity>
 </manifest>
