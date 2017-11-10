@@ -56,7 +56,7 @@ namespace ProjectPanda.Droid
 
                 public static MobileServiceClient MobileService =
                              new MobileServiceClient(
-                                                "https://projectpandamobileappservice20171016015234.azurewebsites.net"
+                                                "http://projectpanda.azurewebsites.net"
                                                 );
 
 
@@ -78,7 +78,7 @@ namespace ProjectPanda.Droid
         {
             // Sign in with Facebook login using a server-managed flow.
             user = await TodoItemManager.DefaultManager.CurrentClient.LoginAsync(this,
-                MobileServiceAuthenticationProvider.Facebook, "{http://www.facebook.com/connect/login_success.html}");
+                MobileServiceAuthenticationProvider.Facebook, "{http://projectpanda.azurewebsites.net}");
             if (user != null)
             {
                 message = string.Format("you are now signed-in as {0}.",
@@ -109,7 +109,7 @@ namespace ProjectPanda.Droid
         {
             // Sign in with Facebook login using a server-managed flow.
             user = await TodoItemManager.DefaultManager.CurrentClient.LoginAsync(this,
-                MobileServiceAuthenticationProvider.Google, "{https://www.googleapis.com/auth/plus.me}");
+                MobileServiceAuthenticationProvider.Google, "{http://projectpanda.azurewebsites.net}");
             if (user != null)
             {
                 message = string.Format("you are now signed-in as {0}.",
@@ -140,7 +140,7 @@ namespace ProjectPanda.Droid
         {
             // Sign in with Facebook login using a server-managed flow.
             user = await TodoItemManager.DefaultManager.CurrentClient.LoginAsync(this,
-                MobileServiceAuthenticationProvider.Facebook, "{http://www.microsoft.com}");
+                MobileServiceAuthenticationProvider.Facebook, "{http://projectpanda.azurewebsites.net}");
             if (user != null)
             {
                 message = string.Format("you are now signed-in as {0}.",

@@ -63,7 +63,7 @@ namespace ProjectPanda.iOS
                 {
                     user = await TodoItemManager.DefaultManager.CurrentClient
                         .LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController,
-                        MobileServiceAuthenticationProvider.Facebook, "{url_scheme_of_your_app}");
+                        MobileServiceAuthenticationProvider.Facebook, "{http://projectpanda.azurewebsites.net}");
                     if (user != null)
                     {
                         message = string.Format("You are now signed-in as {0}.", user.UserId);
@@ -97,7 +97,7 @@ namespace ProjectPanda.iOS
             {
                 user = await TodoItemManager.DefaultManager.CurrentClient
                     .LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController,
-                    MobileServiceAuthenticationProvider.Google, "{https://www.googleapis.com/auth/plus.me}");
+                    MobileServiceAuthenticationProvider.Google, "{http://projectpanda.azurewebsites.net}");
                 if (user != null)
                 {
                     message = string.Format("You are now signed-in as {0}.", user.UserId);
@@ -131,7 +131,7 @@ namespace ProjectPanda.iOS
             {
                 user = await TodoItemManager.DefaultManager.CurrentClient
                     .LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController,
-                    MobileServiceAuthenticationProvider.Google, "{https://www.googleapis.com/auth/plus.me}");
+                    MobileServiceAuthenticationProvider.Google, "{http://projectpanda.azurewebsites.net}");
                 if (user != null)
                 {
                     message = string.Format("You are now signed-in as {0}.", user.UserId);

@@ -66,6 +66,14 @@
 			<key>CFBundleURLTypes</key>
 			<string>Viewer</string>
 		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>google</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>https://www.googleapis.com/auth/plus.me</string>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>
