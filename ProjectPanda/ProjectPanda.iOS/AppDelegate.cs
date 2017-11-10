@@ -29,8 +29,9 @@ namespace ProjectPanda.iOS
             // Azure Gateway using the application url. You're all set to start working with your Mobile App!
             Microsoft.WindowsAzure.MobileServices.MobileServiceClient ProjectPandaClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
             "https://projectpanda.azurewebsites.net");
+            SQLitePCL.CurrentPlatform.Init();
 
-        
+
             global::Xamarin.Forms.Forms.Init ();
 
             //GPs code for Ios

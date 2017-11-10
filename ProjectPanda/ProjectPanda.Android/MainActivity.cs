@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Microsoft.WindowsAzure.MobileServices;
+using SQLitePCL.lib;
 namespace ProjectPanda.Droid
 {
 	[Activity (Label = "ProjectPanda", Icon = "@drawable/icon", Theme="@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -25,8 +26,8 @@ namespace ProjectPanda.Droid
             // Azure Gateway using the application url. You're all set to start working with your Mobile App!
             Microsoft.WindowsAzure.MobileServices.MobileServiceClient ProjectPandaClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
             "https://projectpanda.azurewebsites.net");
+           
 
-          
 
             //the following is for authentication
             global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, bundle);
