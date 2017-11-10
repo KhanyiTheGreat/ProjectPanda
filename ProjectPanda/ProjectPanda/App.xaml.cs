@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ProjectPanda.Pages;
+using ProjectPanda.Services;
 using Xamarin.Forms;
 
 namespace ProjectPanda
 {
 	public partial class App : Application
 	{
-		public App ()
+        public static object Authenticator { get; internal set; }
+
+        public App ()
 		{
 			InitializeComponent();
             Current.MainPage = new NavigationPage(new SignInPrompt());
@@ -29,5 +32,7 @@ namespace ProjectPanda
 		{
 			// Handle when your app resumes
 		}
-	}
+
+      
+    }
 }

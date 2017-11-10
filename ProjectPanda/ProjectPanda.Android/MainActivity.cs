@@ -9,15 +9,21 @@ using Android.OS;
 using Microsoft.WindowsAzure.MobileServices;
 using SQLitePCL.lib;
 using System.Threading.Tasks;
+
+using Microsoft.WindowsAzure.MobileServices.Sync;
+using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
+
+using SQLitePCL.Extensions;
+
 namespace ProjectPanda.Droid
 {
 	[Activity (Label = "ProjectPanda", Icon = "@drawable/icon", Theme="@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity, IAuthenticate
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
 		protected override void OnCreate (Bundle bundle)
 		{
-			TabLayoutResource = Resource.Layout.Tabbar;
-			ToolbarResource = Resource.Layout.Toolbar; 
+			//TabLayoutResource = Resource.Layout.Tabbar;
+			//ToolbarResource = Resource.Layout.Toolbar; 
 
 			base.OnCreate (bundle);
 
@@ -31,7 +37,7 @@ namespace ProjectPanda.Droid
 
 
             //the following is for authentication
-            global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, bundle);
+           global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, bundle);
 
 
             //the following is for Gps api call location
@@ -41,8 +47,7 @@ namespace ProjectPanda.Droid
 			LoadApplication (new ProjectPanda.App ());
 
 
-           // Initialize the authenticator before loading the app.
-            App.Init((IAuthenticate)this);
+          
 
 
         }
@@ -52,115 +57,28 @@ namespace ProjectPanda.Droid
             PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
+       
 
-
-                public static MobileServiceClient MobileService =
+        public static MobileServiceClient MobileService =
                              new MobileServiceClient(
                                                 "http://projectpanda.azurewebsites.net"
                                                 );
 
 
+
+
+
+
+     
+
+
+
+      
+
     }
 
 
 
-    // Define a authenticated user.
-    private MobileServiceUser user;
-
-
-
-    //The following method is for facebook authentication
-    public async Task<bool> Authenticate()
-    {
-        var success = false;
-        var message = string.Empty;
-        try
-        {
-            // Sign in with Facebook login using a server-managed flow.
-            user = await TodoItemManager.DefaultManager.CurrentClient.LoginAsync(this,
-                MobileServiceAuthenticationProvider.Facebook, "{http://projectpanda.azurewebsites.net}");
-            if (user != null)
-            {
-                message = string.Format("you are now signed-in as {0}.",
-                    user.UserId);
-                success = true;
-            }
-        }
-        catch (Exception ex)
-        {
-            message = ex.Message;
-        }
-
-        // Display the success or failure message.
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.SetMessage(message);
-        builder.SetTitle("Sign-in result");
-        builder.Create().Show();
-
-        return success;
-    }
-
-    //the following is for google authentication
-    public async Task<bool> AuthenticateGoogle()
-    {
-        var success = false;
-        var message = string.Empty;
-        try
-        {
-            // Sign in with Facebook login using a server-managed flow.
-            user = await TodoItemManager.DefaultManager.CurrentClient.LoginAsync(this,
-                MobileServiceAuthenticationProvider.Google, "{http://projectpanda.azurewebsites.net}");
-            if (user != null)
-            {
-                message = string.Format("you are now signed-in as {0}.",
-                    user.UserId);
-                success = true;
-            }
-        }
-        catch (Exception ex)
-        {
-            message = ex.Message;
-        }
-
-        // Display the success or failure message.
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.SetMessage(message);
-        builder.SetTitle("Sign-in result");
-        builder.Create().Show();
-
-        return success;
-    }
-
-    //the following is for microsoft authentication
-    public async Task<bool> AuthenticateMicrosoft()
-    {
-        var success = false;
-        var message = string.Empty;
-        try
-        {
-            // Sign in with Facebook login using a server-managed flow.
-            user = await TodoItemManager.DefaultManager.CurrentClient.LoginAsync(this,
-                MobileServiceAuthenticationProvider.Facebook, "{http://projectpanda.azurewebsites.net}");
-            if (user != null)
-            {
-                message = string.Format("you are now signed-in as {0}.",
-                    user.UserId);
-                success = true;
-            }
-        }
-        catch (Exception ex)
-        {
-            message = ex.Message;
-        }
-
-        // Display the success or failure message.
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.SetMessage(message);
-        builder.SetTitle("Sign-in result");
-        builder.Create().Show();
-
-        return success;
-    }
 
 }
 

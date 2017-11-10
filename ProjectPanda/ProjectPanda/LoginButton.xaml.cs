@@ -32,21 +32,8 @@ namespace ProjectPanda
 
         }
 
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-
-            // Refresh items only when authenticated.
-            if (authenticated == true)
-            {
-                // Set syncItems to true in order to synchronize the data
-                // on startup when running in offline mode.
-                await RefreshItems(true, syncItems: false);
-
-                // Hide the Sign-in button.
-                this.loginButton.IsVisible = false;
-            }
-        }
+       
+        
 
 
     }
