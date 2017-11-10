@@ -1,0 +1,14 @@
+{
+  "name": "registered-patients",
+  "version": "0.0.0",
+  "description": "RegisteredPatients",
+  "scripts": {
+    "start": "node server"
+  },
+  "engines": {
+    "node": "~6.10.x"
+  },
+  "author": {
+    "name": "Khanyisani Buthelezi"
+  }
+}
