@@ -16,6 +16,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\ObservableObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\ObservableRangeCollection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\Setting.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LoginButton.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -52,6 +55,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\SupportPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Authentication.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\AuthenticationFacebook.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\AuthenticationGoogle.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\AuthenticationMicrosoft.cs" />
@@ -180,6 +184,9 @@
     <None Include="$(MSBuildThisFileDirectory)Icons\mail_login.png" />
     <None Include="$(MSBuildThisFileDirectory)Icons\Outlook_login.png" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\SignInPrompt.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)LoginButton.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

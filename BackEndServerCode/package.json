@@ -1,0 +1,26 @@
+{
+  "name": "back-end-server-code",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "description": "BackEndServerCode",
+  "author": {
+    "name": "Khanyisani Buthelezi"
+  },
+  "dependencies": {
+    "azure-mobile-apps": "^4.0.1",
+    "azure-mobile-apps-client": "^2.0.1",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.9",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.0-rc.4",
+    "serve-favicon": "^2.4.5"
+  },
+  "engines": {
+    "node": "~6.10.x"
+  }
+}
