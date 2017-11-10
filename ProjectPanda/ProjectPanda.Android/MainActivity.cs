@@ -67,6 +67,9 @@ namespace ProjectPanda.Droid
     // Define a authenticated user.
     private MobileServiceUser user;
 
+
+
+    //The following method is for facebook authentication
     public async Task<bool> Authenticate()
     {
         var success = false;
@@ -75,7 +78,7 @@ namespace ProjectPanda.Droid
         {
             // Sign in with Facebook login using a server-managed flow.
             user = await TodoItemManager.DefaultManager.CurrentClient.LoginAsync(this,
-                MobileServiceAuthenticationProvider.Facebook, "{url_scheme_of_your_app}");
+                MobileServiceAuthenticationProvider.Facebook, "{http://www.facebook.com/connect/login_success.html}");
             if (user != null)
             {
                 message = string.Format("you are now signed-in as {0}.",
@@ -97,6 +100,7 @@ namespace ProjectPanda.Droid
         return success;
     }
 
+    //the following is for google authentication
 
 
 }
