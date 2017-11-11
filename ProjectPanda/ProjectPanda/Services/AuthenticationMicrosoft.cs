@@ -32,12 +32,12 @@ namespace ProjectPanda.Services
             {
                 case Device.iOS:
                     clientId = "ddf910c8-6f98-4586-b26e-7b2e06f612a1";
-                    redirectUri = "https://auth/login/microsoftaccount/callback";
+                    redirectUri = "https://projectpanda.azurewebsites.net/.auth/login/microsoftaccount/callback";
                     break;
 
                 case Device.Android:
                     clientId = "ddf910c8-6f98-4586-b26e-7b2e06f612a1";
-                    redirectUri = "https://auth/login/microsoftaccount/callback";
+                    redirectUri = "https://projectpanda.azurewebsites.net/.auth/login/microsoftaccount/callback";
                     break;
             }
 
@@ -45,8 +45,8 @@ namespace ProjectPanda.Services
               "ddf910c8-6f98-4586-b26e-7b2e06f612a1",
               null,
               "wl.basic",
-              new Uri("https://www.auth/login/microsoftaccount/callback"),
-              new Uri("http://projectpanda.azurewebsites.net"),
+              new Uri("http://projectpanda.azurewebsites.net/.auth/login/microsoftaccount"),
+              new Uri("https://projectpanda.azurewebsites.net/.auth/login/microsoftaccount/callback"),
               new Uri("http://projectpanda.azurewebsites.net"),
               null,
               true);
