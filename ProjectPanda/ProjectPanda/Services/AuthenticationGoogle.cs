@@ -33,12 +33,12 @@ namespace ProjectPanda.Services
             {
                 case Device.iOS:
                     clientId = "655782672996-f7n91tloeocgksh8dogfuijhpfcre2m1.apps.googleusercontent.com";
-                    redirectUri = "https://www.googleapis.com/auth/plus.me";
+                    redirectUri = "https://projectpanda.azurewebsites.net/.auth/login/google/callback";
                     break;
 
                 case Device.Android:
                     clientId = "655782672996-f7n91tloeocgksh8dogfuijhpfcre2m1.apps.googleusercontent.com";
-                    redirectUri = "https://www.googleapis.com/auth/plus.me";
+                    redirectUri = "https://projectpanda.azurewebsites.net/.auth/login/google/callback";
                     break;
             }
 
@@ -47,7 +47,7 @@ namespace ProjectPanda.Services
               null,
               "profile",
               new Uri("https://www.googleapis.com/auth/plus.me"),
-              new Uri("http://projectpanda.azurewebsites.net"),
+              new Uri("https://projectpanda.azurewebsites.net/.auth/login/google/callback"),
               new Uri("http://projectpanda.azurewebsites.net"),
               null,
               true);
