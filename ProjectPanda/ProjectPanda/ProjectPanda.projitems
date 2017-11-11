@@ -30,6 +30,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\patientUser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Profile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\QRCodeGen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\RegisteredPatients.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\token.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\DoctorList.xaml.cs">
       <SubType>Code</SubType>
