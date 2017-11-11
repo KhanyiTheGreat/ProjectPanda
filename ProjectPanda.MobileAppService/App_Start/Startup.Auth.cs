@@ -47,23 +47,23 @@ namespace ProjectPanda.MobileAppService
             app.UseOAuthBearerTokens(OAuthOptions);
 
             // Uncomment the following lines to enable logging in with third party login providers
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+            app.UseMicrosoftAccountAuthentication(
+             clientId: "ddf910c8-6f98-4586-b26e-7b2e06f612a1",
+               clientSecret: "rCfx4GPgh3EsUm0xaToJS4x");
 
             //app.UseTwitterAuthentication(
             //    consumerKey: "",
             //    consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //    appId: "",
-            //    appSecret: "");
+                app.UseFacebookAuthentication(
+                appId: "136133043698809",
+                appSecret: "394e6027026c9b9f9a388c37e6d45e8f");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+               ClientId = "655782672996-f7n91tloeocgksh8dogfuijhpfcre2m1.apps.googleusercontent.com",
+                ClientSecret = "655782672996-f7n91tloeocgksh8dogfuijhpfcre2m1.apps.googleusercontent.com"
+           });
         }
     }
 }
