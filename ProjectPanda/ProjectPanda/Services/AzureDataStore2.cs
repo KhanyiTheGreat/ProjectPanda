@@ -46,6 +46,8 @@ namespace ProjectPanda.Services
 
         public async Task<bool> AddDoctorsListAsync(DocAvaliable doctorOnCall)
         {
+           //this function will be used for showing up the doclist after a search is initalized
+           // change name from "add.."--> "update.."
             await DocInitialize();
             await DocPullLatestAsync();
             //await DoctorOnCallTable.InsertAsync(doctorOnCall);
@@ -56,6 +58,7 @@ namespace ProjectPanda.Services
 
         public async Task<bool> DeleteDoctorsListAsync(DocAvaliable doctorOnCall)
         {
+            //this will change too
             await DocInitialize();
             await DocPullLatestAsync();
             await DoctorOnCallTable.DeleteAsync(doctorOnCall);
