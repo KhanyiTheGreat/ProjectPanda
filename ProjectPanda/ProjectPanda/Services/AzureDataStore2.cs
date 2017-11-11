@@ -44,29 +44,99 @@ namespace ProjectPanda.Services
         }
 
 
-        public Task<bool> AddDoctorsListAsync(DocAvaliable doctorOnCall)
+        public async Task<bool> AddDoctorsListAsync(DocAvaliable doctorOnCall)
         {
-            throw new NotImplementedException();
+            await DocInitialize();
+            await DocPullLatestAsync();
+            //await DoctorOnCallTable.InsertAsync(doctorOnCall);
+            await DocSyncAsync();
+
+            return true;
         }
 
-        public Task<bool> DeleteDoctorsListAsync(DocAvaliable doctorOnCall)
+        public async Task<bool> DeleteDoctorsListAsync(DocAvaliable doctorOnCall)
         {
-            throw new NotImplementedException();
+            await DocInitialize();
+            await DocPullLatestAsync();
+            await DoctorOnCallTable.DeleteAsync(doctorOnCall);
+            await DocSyncAsync();
+
+            return true;
         }
 
-        public Task DocInitialize()
+        public async Task DocInitialize()
         {
-            throw new NotImplementedException();
+            if (isInitialized)
+                return;
+            // Code is suppose to check if user is logged in or not
+            //We do this buy retrieving the URL link using 
+            // `MobileServices = new MobileServicesJsonSerializerSettings`
+
+            //#1 do check statement to receieve AuthToken
+            //#2 start the database, Define the table and then call GetDoctorSyncTable<Docavalibale>();
+
+            //var store = new MobileServiceSQLLiteStore("main.db");
+            //store.DefineTable<DocAvaliable>();
+            //await MobileServices.SyncContext.InitializeAsync(store, new MobileServiceSyncHandler());
+            // DoctorOnCallTable = MobileService.GetSyncTable<DocAvaliable>();
+          
+            isInitialized = true;
+
         }
 
-        public Task<bool> DocPullLatestAsync()
+        public async Task<bool> DocPullLatestAsync()
         {
-            throw new NotImplementedException();
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                Debug.WriteLine("Unable to show avalibale doctors, since your offline");
+                return false;
+            }
+            try
+            {
+               // await DoctorOnCallTable.PullAsync($"all{typeof(DocAvaliable).Name}", DoctorOnCallTable.CreateQuery());
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Unable to pull the Available Doctors, that is alright as we have offline capabilities: " + ex);
+                return false;
+            }
         }
 
-        public Task<bool> DocSyncAsync()
+        public async Task<bool> DocSyncAsync()
         {
-            throw new NotImplementedException();
+            if (!!CrossConnectivity.Current.IsConnected)
+            {
+                Debug.WriteLine("Unable to pull the Available Doctors");
+                return false;
+            }
+            try
+            {
+
+            }
+            catch (MobileServicePushFailedException exc)
+            {
+                if (exc.PushResult == null)
+                {
+
+                }
+                foreach (var error in exc.PushResult.Errors)
+                {
+                    if (error.OperationKind == MobileServiceTableOperationKind.Update && error.Result != null)
+                    {
+                        //Update failed, reverting to server's copy.
+                    }
+                    else
+                    {
+                        // Discard local change.
+                    }
+
+
+                }
+
+
+            }
+            return true;
         }
 
 
