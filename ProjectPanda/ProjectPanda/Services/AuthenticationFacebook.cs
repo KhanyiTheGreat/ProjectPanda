@@ -40,12 +40,12 @@ namespace ProjectPanda.Services
             {
                 case Device.iOS:
                     clientId = "136133043698809";
-                    redirectUri = "https://m.facebook.com/dialog/oauth/";
+                    redirectUri = "https://projectpanda.azurewebsites.net/.auth/login/facebook/callback";
                     break;
 
                 case Device.Android:
                     clientId = "136133043698809";
-                    redirectUri = "https://m.facebook.com/dialog/oauth/";
+                    redirectUri = "https://projectpanda.azurewebsites.net/.auth/login/facebook/callback";
                     break;
             }
 
@@ -54,7 +54,7 @@ namespace ProjectPanda.Services
               null,
               "public_profile",
               new Uri("https://m.facebook.com/dialog/oauth/"),
-              new Uri("http://www.facebook.com/connect/login_success.html"),
+              new Uri("https://projectpanda.azurewebsites.net/.auth/login/facebook/callback"),
               new Uri("http://projectpanda.azurewebsites.net"),
               null,
               true);
