@@ -6,6 +6,8 @@
 ** Sample Table Definition - this supports the Azure Mobile Apps
 ** TodoItem product with authentication and offline sync
 */
+
+
 var azureMobileApps = require('azure-mobile-apps');
 
 // Create a new table definition
