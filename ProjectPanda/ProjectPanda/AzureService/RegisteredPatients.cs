@@ -5,7 +5,7 @@ using ProjectPanda.Models;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
 using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
-using ProjectPanda.Models;
+using Plugin.Connectivity;
 
 namespace ProjectPanda.AzureService
 {
@@ -36,15 +36,17 @@ namespace ProjectPanda.AzureService
 
                             var store = new MobileServiceSQLiteStore(localDeviceDB);
 
-                             store.DefineTable<RegisteredPatients> (); //i'll uncomment this later once I understand what james is saying
+                             store.DefineTable<Models.RegisteredPatients> (); //i'll uncomment this later once I understand what james is saying
 
-                             //add more store.defineTable 
+                             //add more store.defineTable's, still deciding 
 
                           await client.SyncContext.InitializeAsync(store);
 
-                            //egisteredPatients=client.GetSyncTable<>  //for syncrinization 
+                              //egisteredPatients=client.GetSyncTable<>  //for syncrinization 
 
-                          //  client.GetTable(name of the table that needs syncing, i'll represent it as a % sign in the rest of the code);
+           
+
+                             // patientInfo = client.GetTable(Models.RegisteredPatients);
                       
                          }
 
@@ -58,18 +60,18 @@ namespace ProjectPanda.AzureService
 
             try{
             
-            This will skip becuase it wont be edited and it wont be online
+          //  This will skip becuase it wont be edited and it wont be online
             if(!CrossConncectivity.Current.IsConnected)
             return;
            
-            This will execute if online
+          //  This will execute if online
             await client.SyncContext.PushAsync();
-            
+            await patientInfo.PullAsync(patient.CreateQuery());
             }
 
             catch(Exception ex){
             
-                    debug
+                    Debug.WriteLine(ex);
             }
              
              */
@@ -88,22 +90,25 @@ namespace ProjectPanda.AzureService
 
        
         
-        public async Task<IEnumerable<RegisteredPatients>> GetRegisteredPatients() {
+        public async Task<IEnumerable<Model.RegisteredPatients>> GetRegisteredPatientInfo() {
 
             await Initalize();
 
             await SyncPatientInfo();
                 
-                var dataFromTable=%;
+                var dataFromTable= await patientInfo;
+                    
+                await patientInfo.InsertAsync(dataFromTable);
         
-        
+                            
+
                 return dataFromTable;
         
         }
 
       
         //this will simply edit information to be updated to the database if there is any information change 
-       public async Task <RegisteredPatients> EditInformation(){
+       public async Task <Model.RegisteredPatients> EditInformation(){
        
         
         await Intitialize();
