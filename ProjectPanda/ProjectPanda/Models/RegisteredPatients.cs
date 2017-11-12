@@ -6,6 +6,10 @@ namespace ProjectPanda.Models
 {
     class RegisteredPatients
     {
+
+        //Used to locally display information on the users device
+
+
         [JsonProperty("Id")]
         public string Id { get; set; }
 
@@ -33,7 +37,8 @@ namespace ProjectPanda.Models
         [JsonProperty("Email")]
         public string Email { get; set; }
 
-
+        [JsonProperty("Alergies")]
+        public string Alergies { get; set; }
 
         [Microsoft.WindowsAzure.MobileServices.CreatedAt]
         public string AzureCreated { get; set; }
