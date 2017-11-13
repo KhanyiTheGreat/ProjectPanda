@@ -13,6 +13,11 @@ namespace ProjectPanda.Models
         [JsonProperty("Id")]
         public string Id { get; set; }
 
+        [JsonProperty("First Name")]
+        public string First_Name { get; set; }
+
+        [JsonProperty("Surname")]
+        public string Surname { get; set; }
 
         [JsonProperty("MedicalAid")]
         public string MedicalAid { get; set; }
