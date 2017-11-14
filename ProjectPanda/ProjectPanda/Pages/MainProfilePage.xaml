@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectPanda.Pages.MainProfilePage"
               xmlns:page="clr-namespace:ProjectPanda.Views"    
-             >
+             Title="Project Panda"
+                  >
     
         <!--SideMenu details-->
         <MasterDetailPage.Master>

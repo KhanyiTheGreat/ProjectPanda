@@ -13,7 +13,7 @@
                 <RowDefinition Height="80" />
             </Grid.RowDefinitions>
             <StackLayout>
-                <Label HorizontalOptions="Center" Text="ProjectPanda" FontSize="33" />
+                <Label />
             </StackLayout>
             <Grid Grid.Row="1" Margin="20,0,20,0">
                 <Grid.RowDefinitions>

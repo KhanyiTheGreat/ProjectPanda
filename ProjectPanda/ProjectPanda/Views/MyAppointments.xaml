@@ -24,6 +24,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
 
                 </Grid.RowDefinitions>
 
@@ -111,6 +112,8 @@
                 <Label Text="Place :" BackgroundColor="DarkGray" TextColor="Black" Margin="15,20,15,20" FontSize="20" Grid.Row="8" VerticalTextAlignment="Center"/>
 
                 <Label Text="Doctor :" BackgroundColor="DarkGray" TextColor="Black" Margin="15,20,15,20" FontSize="20" Grid.Row="9" VerticalTextAlignment="Center"/>
+
+                <Button Text="Cancel" Grid.Row="10" BorderRadius="2" BorderColor="Black" BackgroundColor="Red" TextColor="White"/>
 
             </Grid>
 
