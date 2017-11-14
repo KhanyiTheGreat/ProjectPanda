@@ -32,6 +32,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\QRCodeGen.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\RegisteredPatients.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\token.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\DetailPageForFilling.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\DoctorList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -182,6 +185,9 @@
     <None Include="$(MSBuildThisFileDirectory)Icons\mail_login.png" />
     <None Include="$(MSBuildThisFileDirectory)Icons\Outlook_login.png" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\SignInPrompt.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\DetailPageForFilling.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

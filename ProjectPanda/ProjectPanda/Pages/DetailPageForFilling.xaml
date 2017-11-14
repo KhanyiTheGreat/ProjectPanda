@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectPanda.Pages.DetailPageForFilling">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Grid BackgroundColor="#92da69" Padding="30">
+                <Grid.ColumnDefinitions>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#92da69" Grid.Row="0"  Margin="0,0, 0,50">
+                    <Label Text="Project Panda"  FontSize="25"/>
+                </StackLayout>
+
+
+                <StackLayout  Grid.Row="1" BackgroundColor="#92da69">
+                    <Entry BackgroundColor="White"   Placeholder="First Name:" PlaceholderColor="Black" Opacity="1"/>
+                </StackLayout>
+
+
+                <StackLayout Grid.Row="2" BackgroundColor="#92da69" >
+                    <Entry BackgroundColor="White"  Placeholder="Surname:" PlaceholderColor="Black" Opacity="1"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" BackgroundColor="#92da69" >
+                    <Entry BackgroundColor="White"    Placeholder="Email Address:" PlaceholderColor="Black" Opacity="1" Keyboard="Email"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" BackgroundColor="#92da69"  >
+                    <Entry BackgroundColor="White"   Placeholder="Cell number:" PlaceholderColor="Black" Opacity="1" Keyboard="Numeric"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" BackgroundColor="#92da69" >
+                    <Entry BackgroundColor="White"    Placeholder="Chronic Disease(s):" PlaceholderColor="Black" Opacity="1"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="6" BackgroundColor="#92da69" >
+                    <Entry BackgroundColor="White"  Placeholder="Allergies:" PlaceholderColor="Black" Opacity="1"/>
+                </StackLayout>
+
+
+                <StackLayout Grid.Row="7" BackgroundColor="#92da69" >
+                    <Picker x:Name="picker" Title="Blood Type" BackgroundColor="White" TextColor="Black" Opacity="1" >
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>O-Postive</x:String>
+                                <x:String>O-Negative</x:String>
+                                <x:String>A-Postive</x:String>
+                                <x:String>A-Negative</x:String>
+                                <x:String>B-Postive</x:String>
+                                <x:String>B-Negative</x:String>
+                                <x:String>AB-Postive</x:String>
+                                <x:String>AB-Negative</x:String>
+
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                </StackLayout>
+
+                <StackLayout Grid.Row="8" BackgroundColor="#92da69">
+
+                    <Picker x:Name="picker2" Title="Medical Aid" BackgroundColor="White" TextColor="Black" Opacity="1" >
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Discovery Health</x:String>
+                                <x:String>Bonitas</x:String>
+                                <x:String>FedHealth</x:String>
+                                <x:String>Metropolitan OpenPlan</x:String>
+                                <x:String>Oxygen</x:String>
+                                <x:String>Resolution Health</x:String>
+                                <x:String>Spectramed</x:String>
+                                <x:String>Sizwe</x:String>
+                                <x:String>Momentum</x:String>
+                                <x:String>Topmed</x:String>
+                                <x:String>Bestmed</x:String>
+                                <x:String>Profmed</x:String>
+                                <x:String>Jenus</x:String>
+                                <x:String>Keyhealth</x:String>
+                                <x:String>Medihelp</x:String>
+
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                </StackLayout>
+
+
+
+            </Grid>
+
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
