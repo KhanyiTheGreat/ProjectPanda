@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectPanda.Pages.DetailPageForFilling"
              Title="Project Panda"
-             BackgroundColor="DarkGreen"
+             BackgroundColor="#92da69"
              >
     <ContentPage.Content>
         <ScrollView>
@@ -34,33 +34,33 @@
 
 
                 <StackLayout  Grid.Row="1" BackgroundColor="#92da69">
-                    <Entry BackgroundColor="White"   Placeholder="First Name:" PlaceholderColor="Black" Opacity="1"/>
+                    <Entry BackgroundColor="#92da69"   Placeholder="First Name" PlaceholderColor="White" Opacity="1" FontSize="12"/>
                 </StackLayout>
 
 
                 <StackLayout Grid.Row="2" BackgroundColor="#92da69" >
-                    <Entry BackgroundColor="White"  Placeholder="Surname:" PlaceholderColor="Black" Opacity="1"/>
+                    <Entry BackgroundColor="#92da69"  Placeholder="Surname" PlaceholderColor="White" Opacity="1" FontSize="12"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="3" BackgroundColor="#92da69" >
-                    <Entry BackgroundColor="White"    Placeholder="Email Address:" PlaceholderColor="Black" Opacity="1" Keyboard="Email"/>
+                    <Entry BackgroundColor="#92da69"    Placeholder="Email Address" PlaceholderColor="White" Opacity="1" Keyboard="Email" FontSize="12"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="4" BackgroundColor="#92da69"  >
-                    <Entry BackgroundColor="White"   Placeholder="Cell number:" PlaceholderColor="Black" Opacity="1" Keyboard="Numeric"/>
+                    <Entry BackgroundColor="#92da69"   Placeholder="Cell number" PlaceholderColor="White" Opacity="1" Keyboard="Numeric" FontSize="12"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="5" BackgroundColor="#92da69" >
-                    <Entry BackgroundColor="White"    Placeholder="Chronic Disease(s):" PlaceholderColor="Black" Opacity="1"/>
+                    <Entry BackgroundColor="#92da69"    Placeholder="Chronic Disease(s)" PlaceholderColor="White" Opacity="1" FontSize="12"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="6" BackgroundColor="#92da69" >
-                    <Entry BackgroundColor="White"  Placeholder="Allergies:" PlaceholderColor="Black" Opacity="1"/>
+                    <Entry BackgroundColor="#92da69"  Placeholder="Allergies" PlaceholderColor="White" Opacity="1" FontSize="12"/>
                 </StackLayout>
 
 
                 <StackLayout Grid.Row="7" BackgroundColor="#92da69" >
-                    <Picker x:Name="picker" Title="Blood Type" BackgroundColor="White" TextColor="Black" Opacity="1" >
+                    <Picker x:Name="picker" Title="Blood Type" BackgroundColor="#92da69" TextColor="White" Opacity="1"  >
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>O-Postive</x:String>
@@ -80,7 +80,7 @@
 
                 <StackLayout Grid.Row="8" BackgroundColor="#92da69">
 
-                    <Picker x:Name="picker2" Title="Medical Aid" BackgroundColor="White" TextColor="Black" Opacity="1" >
+                    <Picker x:Name="picker2" Title="Medical Aid" BackgroundColor="#92da69" TextColor="White" Opacity="1" >
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>Discovery Health</x:String>

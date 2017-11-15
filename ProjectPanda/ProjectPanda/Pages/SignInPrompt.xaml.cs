@@ -19,7 +19,7 @@ namespace ProjectPanda.Pages
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-
+            // Code should check if the credentials entered are true and stored in the database before going to the mainprofile page
         }
 
         async void prompt(object sender, EventArgs e) {
@@ -30,7 +30,7 @@ namespace ProjectPanda.Pages
 
         async void ContactUs(object sender, EventArgs e) {
 
-            await Navigation.PushAsync(new SupportPage());
+           await Navigation.PushAsync(new SupportPagae());
         }
     }
 }

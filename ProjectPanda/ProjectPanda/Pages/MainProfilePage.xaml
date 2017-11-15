@@ -85,7 +85,7 @@
 
                 <TabbedPage.Children>
 
-                    <page:ProfilePage Title="Profile"
+                    <page:ProfilePage Title="Profile" 
                                       
                      />
 

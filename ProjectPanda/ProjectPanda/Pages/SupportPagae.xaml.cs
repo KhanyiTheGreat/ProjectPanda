@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace ProjectPanda.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class SupportPage : ContentPage
+	public partial class SupportPagae : ContentPage
 	{
-		public SupportPage ()
+		public SupportPagae ()
 		{
-         //   InitializeComponent();
-        }
+			InitializeComponent ();
+		}
 	}
 }

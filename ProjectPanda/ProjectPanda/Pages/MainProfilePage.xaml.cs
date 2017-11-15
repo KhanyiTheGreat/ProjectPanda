@@ -28,7 +28,7 @@ namespace ProjectPanda.Pages
 
         private void Menu_btn4_Clicked(object sender, EventArgs e)
         {
-            Detail = new NavigationPage(new SupportPage());
+            Detail = new NavigationPage(new SupportPagae());
             IsPresented = false;
         }
 
