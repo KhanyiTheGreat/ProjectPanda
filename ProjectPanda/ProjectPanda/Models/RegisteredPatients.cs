@@ -42,7 +42,7 @@ namespace ProjectPanda.Models
         [JsonProperty("Email")]
         public string Email { get; set; }
 
-        [JsonProperty("Alergies")]
+        [JsonProperty("Allergies")]
         public string Alergies { get; set; }
 
         [Microsoft.WindowsAzure.MobileServices.CreatedAt]
