@@ -12,9 +12,9 @@ namespace ProjectPanda.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Login : ContentPage
 	{
-        bool authenticatedGoogleSucessfully = true;
-        bool authenticatedFacebookSucessfully = true;
-        bool authenticatedMicrosoftSucessfully = true;
+        bool authenticatedGoogleSucessfully = false;
+        bool authenticatedFacebookSucessfully =false;
+        bool authenticatedMicrosoftSucessfully = false;
 
         public Login ()
 		{
