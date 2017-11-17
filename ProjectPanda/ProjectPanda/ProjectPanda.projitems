@@ -192,7 +192,4 @@
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)AzureService\" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)background wallpaper %281%29.png" />
-  </ItemGroup>
 </Project>
