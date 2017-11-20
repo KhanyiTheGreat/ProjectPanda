@@ -4,12 +4,12 @@ using System.Text;
 using Newtonsoft.Json;
 namespace ProjectPanda.Models
 {
-    class RegisteredPatients
+   public class RegisteredPatients
     {
 
         //Used to locally display information on the users device
 
-
+        
         [JsonProperty("Id")]
         public string Id { get; set; }
 
