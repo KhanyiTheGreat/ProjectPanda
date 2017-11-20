@@ -2,54 +2,57 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectPanda.Pages.SignInPrompt"
-             BackgroundColor="#92da69"
-
+            
+              BackgroundColor="#92da69"
+            
              >
     <ContentPage.Content >
 
-        <Grid >
-            <Grid.RowDefinitions>
-                <RowDefinition Height="80" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="80" />
-            </Grid.RowDefinitions>
-            <StackLayout>
-                <Label />
-            </StackLayout>
-            <Grid Grid.Row="1" Margin="20,0,20,0">
+        <RelativeLayout HorizontalOptions="Center" >
+            <Image Source="Untitled design (8).png" Aspect="Fill"/>
+            <Grid >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="50" />
-                    <RowDefinition Height="50" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="40" />
-                    <RowDefinition Height="40" />
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="80" />
                     <RowDefinition Height="*" />
+                    <RowDefinition Height="80" />
                 </Grid.RowDefinitions>
-                <Image Source="LOGO.jpg" HeightRequest="70"  VerticalOptions="End"/>
-                <Entry Grid.Row="1" Placeholder="Email Address" PlaceholderColor="White" FontSize="16"/>
-                <Entry Grid.Row="2" Placeholder="Password" IsPassword="True" PlaceholderColor="White" FontSize="16"/>
-                <Button Text="Log In" Clicked="Button_Clicked" BackgroundColor="#229122" TextColor="White" HeightRequest="50" VerticalOptions="Center"  Grid.Row="3" Margin="0,20,0,20"/>
-                <Button Text="Having problems contact us" HorizontalOptions="Center" Grid.Row="4" Margin="0,0,0,0" FontSize="15" BackgroundColor="#92da69" Clicked="ContactUs"/>
-                <Grid Grid.Row="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Label HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                    <Label Text="OR" Grid.Column="1" VerticalOptions="Center" Margin="10,0,10,0" TextColor="Black" />
-                    <Label Grid.Column="2" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-
-                </Grid>
-                <StackLayout Grid.Row="7" HorizontalOptions="Center" >
-                    <Label HeightRequest="1" />
-                    <Button Text="Dont have an account Sign Up" BackgroundColor="#92da69" Clicked="prompt" />
+                <StackLayout>
+                    <Label />
                 </StackLayout>
+                <Grid Grid.Row="1" Margin="20,0,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Image Source="LOGO.jpg" HeightRequest="70"  VerticalOptions="End"/>
+                    <Entry Grid.Row="1" Placeholder="Email Address" PlaceholderColor="White" FontSize="16"/>
+                    <Entry Grid.Row="2" Placeholder="Password" IsPassword="True" PlaceholderColor="White" FontSize="16"/>
+                    <Button Text="Log In" Clicked="Button_Clicked" BackgroundColor="#229122" TextColor="White" HeightRequest="50" VerticalOptions="Center"  Grid.Row="3" Margin="0,20,0,20"/>
+                    <Button Text="Having problems contact us" HorizontalOptions="Center" Grid.Row="4" Margin="0,0,0,0" FontSize="15" BackgroundColor="#92da69" Clicked="ContactUs"/>
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                        <Label Text="OR" Grid.Column="1" VerticalOptions="Center" Margin="10,0,10,0" TextColor="Black" />
+                        <Label Grid.Column="2" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+
+                    </Grid>
+                    <StackLayout Grid.Row="7" HorizontalOptions="Center" >
+                        <Label HeightRequest="1" />
+                        <Button Text="Dont have an account Sign Up" BackgroundColor="#92da69" Clicked="prompt" />
+                    </StackLayout>
+                </Grid>
+
             </Grid>
-
-        </Grid>
-
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

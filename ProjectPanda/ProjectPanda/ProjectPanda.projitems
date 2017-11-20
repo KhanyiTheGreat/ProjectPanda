@@ -192,4 +192,7 @@
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)AzureService\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Untitled design %288%29.png" />
+  </ItemGroup>
 </Project>
