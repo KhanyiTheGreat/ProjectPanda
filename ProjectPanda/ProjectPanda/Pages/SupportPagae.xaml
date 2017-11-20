@@ -15,25 +15,35 @@
 
             <Grid.RowDefinitions >
                 <RowDefinition Height="70"/>
-                <RowDefinition  Height="70" />
-                <RowDefinition  Height="70"/>
+                <RowDefinition  Height="80" />
+                <RowDefinition  Height="80"/>
                 <RowDefinition  Height="0"/>
                 <RowDefinition  Height="0"/>
             </Grid.RowDefinitions>
 
 
+            <StackLayout Grid.Column="0" Grid.Row="0">
+                <Image Source="facebooksupport.PNG" />
+            </StackLayout>
 
+            <StackLayout Grid.Column="0" Grid.Row="1">
+                <Image Source="twittersupport.PNG"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="0" Grid.Row="2">
+                <Image Source="mailsupport.PNG"/>
+            </StackLayout>
 
             <StackLayout Grid.Row="0" Grid.Column="1" >
-                <Label  Text="Facebook: RillaSoftworks" TextColor="White" FontSize="17" />
+                <Label  Text="Facebook: RillaSoftworks" TextColor="White" FontSize="17" VerticalTextAlignment="Center" />
             </StackLayout>
 
             <StackLayout Grid.Row="1" Grid.Column="1" >
-                <Label  Text="Twitter: @RillaEver" TextColor="White" FontSize="17"/>
+                <Label  Text="Twitter: @RillaEver" TextColor="White" FontSize="17" VerticalTextAlignment="Center"/>
             </StackLayout>
 
             <StackLayout Grid.Row="2" Grid.Column="1">
-                <Label  Text="Email: pandamed20@gmail.com" TextColor="White" FontSize="17"/>
+                <Label  Text="Email: pandamed20@gmail.com" TextColor="White" FontSize="17" VerticalTextAlignment="Center"/>
             </StackLayout>
         </Grid>
     </ContentPage.Content>
