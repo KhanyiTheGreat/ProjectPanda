@@ -11,6 +11,7 @@ using Microsoft.WindowsAzure.MobileServices.Query;
 using Plugin.Connectivity;
 namespace ProjectPanda.AzureService
 {
+    /*
     public class RegistredPatientsBackEnd
     {
         public MobileServiceClient MobileService { get; set; }
@@ -89,4 +90,5 @@ namespace ProjectPanda.AzureService
 
 
     }
+    */
 }
