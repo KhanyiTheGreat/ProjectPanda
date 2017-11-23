@@ -33,12 +33,12 @@ namespace ProjectPanda.Services
             {
                 case Device.iOS:
                     clientId = "655782672996-f7n91tloeocgksh8dogfuijhpfcre2m1.apps.googleusercontent.com";
-                    redirectUri = "https://projectpanda.azurewebsites.net/www.googleapis.com/auth/plus.login";
+                    redirectUri = "https://projectpanda.azurewebsites.net/.auth/login/google/login";
                     break;
 
                 case Device.Android:
                     clientId = "655782672996-f7n91tloeocgksh8dogfuijhpfcre2m1.apps.googleusercontent.com";
-                    redirectUri = "https://projectpanda.azurewebsites.net/.auth/login/google/callback";
+                    redirectUri = "https://projectpanda.azurewebsites.net/.auth/login/google/login";
                     break;
             }
 
@@ -77,7 +77,7 @@ namespace ProjectPanda.Services
             {
                 // If the user is authenticated, request their basic user data from Google
                 // UserInfoUrl = https://www.googleapis.com/oauth2/v2/userinfo
-                var request = new OAuth2Request("GET", new Uri("http://projectpanda.azurewebsites.net"), null, e.Account);
+                var request = new OAuth2Request("GET", new Uri("https://www.googleapis.com/oauth2/v2/userinfo"), null, e.Account);
                 var response = await request.GetResponseAsync();
                 if (response != null)
                 {
