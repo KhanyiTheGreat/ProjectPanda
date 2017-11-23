@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ProjectPanda.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,9 +17,26 @@ namespace ProjectPanda.Pages
 			InitializeComponent ();
 		}
 
-        private void Button_Clicked(object sender, EventArgs e)
+        
+
+
+
+
+         private  void  Button_Clicked(object sender, EventArgs e)
         {
-            // Code should check if the credentials entered are true and stored in the database before going to the mainprofile page
+
+
+            /*
+             
+                    if(EmailAddress && Password && (isAuthenticated==true) == those in the databse )    {Navigation.PushAsync(new MainProfilePage());}
+             
+             */
+
+
+
+
+                Navigation.PushAsync(new MainProfilePage());
+     
         }
 
         async void prompt(object sender, EventArgs e) {
@@ -32,5 +49,7 @@ namespace ProjectPanda.Pages
 
            await Navigation.PushAsync(new SupportPagae());
         }
+
+
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using ProjectPanda.Views;
 namespace ProjectPanda.Models
 {
     public class Appointment
@@ -31,13 +31,16 @@ namespace ProjectPanda.Models
         {
             //This method is for cancelling the already booked appointment
             //this method will have to be overid by the BookAppiontment method
+            //code must remove appointment from the database and use a pop up message to alert that the appointment is being deleted 
             
-
         }
 
 
         protected bool BookingBypicker() {
 
+         
+            
+            
             /*
                     if((doctor) || (date) || (time)|| (location) !SelectedItem) { return false; }
              

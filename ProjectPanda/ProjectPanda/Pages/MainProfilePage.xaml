@@ -8,7 +8,7 @@
     
         <!--SideMenu details-->
         <MasterDetailPage.Master>
-            <ContentPage Padding="10" BackgroundColor="Gray" Title="Menu" Icon="" >
+            <ContentPage Padding="10" BackgroundColor="Gray" Title="Menu" >
                 <ContentPage.Content>
                     <StackLayout >
                         <Label Text="Menu" HorizontalOptions="Center" VerticalOptions="Center" />
@@ -83,27 +83,27 @@
 
             <TabbedPage>
 
-                <TabbedPage.Children>
+            <TabbedPage.Children>
 
-                    <page:ProfilePage Title="Profile" 
+                <page:ProfilePage Title="Profile" 
                                       
                      />
 
-                    <page:MyAppointments Title="My Appoitments"
+                <page:MyAppointments Title="My Appoitments"
                                          
                      />
 
-                    <page:Delivery Title="Delivery"
+                <page:Delivery Title="Delivery"
                                    
                     />
 
-                    <page:CamPage Icon="" 
+                <page:CamPage 
                                   
                     />
 
-                </TabbedPage.Children>
+            </TabbedPage.Children>
 
-            </TabbedPage>
+        </TabbedPage>
         </MasterDetailPage.Detail>
         
     

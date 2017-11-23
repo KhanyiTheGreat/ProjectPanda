@@ -13,8 +13,9 @@ namespace ProjectPanda.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MyAppointments : ContentPage
     {
-        public Appointment Appointment { get; set; }
-        int number = 0;
+            public Appointment Appointment { get; set; }
+
+        
 
         public MyAppointments()
         {
@@ -22,7 +23,7 @@ namespace ProjectPanda.Views
 
             Appointment = new Appointment
             {
-
+                
             };
             BindingContext = this;
 
@@ -31,8 +32,18 @@ namespace ProjectPanda.Views
 
         private void schedule(object sender, EventArgs e)
         {
-            //code that should redirect to the appointments clss in the model folder
+            //code should then book the appointment
+            Appointment.BookAppointment();
         }
+
+        private void Cancel(object sender, EventArgs e) {
+
+            //Code for cancelling appointments
+            Appointment.CancelAppointment();
+
+        }
+
+
     }
 
 }
