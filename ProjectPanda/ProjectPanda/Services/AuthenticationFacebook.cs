@@ -81,7 +81,7 @@ namespace ProjectPanda.Services
             if (e.IsAuthenticated)
             {
                 // If the user is authenticated, request their basic user data from Google
-                // UserInfoUrl = https://www.googleapis.com/oauth2/v2/userinfo
+                // UserInfoUrl =
                 var request = new OAuth2Request("GET", new Uri("http://projectpanda.azurewebsites.net"), null, e.Account);
                 var response = await request.GetResponseAsync();
                 if (response != null)
