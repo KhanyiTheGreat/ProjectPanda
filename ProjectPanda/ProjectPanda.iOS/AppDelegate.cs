@@ -5,6 +5,8 @@ using Microsoft.WindowsAzure.MobileServices;
 using System.Threading.Tasks;
 using Foundation;
 using UIKit;
+using Xamarin.Auth;
+
 
 namespace ProjectPanda.iOS
 {
@@ -38,8 +40,13 @@ namespace ProjectPanda.iOS
             //GPs code for Ios
             Xamarians.GPS.iOS.GPSServiceIOS.Initialize();
 
-            //finshed launching method call for authentication
-            App.Init(this);
+            //finshed launching method call for authentication, needs to be looked at again for testing on ios
+            //  App.Init(this);
+
+
+            //this is for the Qr code reader
+            ZXing.Net.Mobile.Forms.iOS.Platform.Init();
+
 
             LoadApplication (new ProjectPanda.App ());
 

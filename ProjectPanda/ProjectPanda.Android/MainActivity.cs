@@ -43,6 +43,14 @@ namespace ProjectPanda.Droid
             //the following is for Gps api call location
             Xamarians.GPS.Droid.GPSServiceAndroid.Initialize(this);
 
+            //the code for implementing the QR reader
+            ZXing.Net.Mobile.Forms.Android.Platform.Init();
+
+          
+
+
+
+
             global::Xamarin.Forms.Forms.Init (this, bundle);
 			LoadApplication (new ProjectPanda.App ());
 
@@ -52,29 +60,28 @@ namespace ProjectPanda.Droid
 
         }
 
+
+
+
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
         {
             PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            global::ZXing.Net.Mobile.Forms.Android.PermissionsHandler.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-
-       
-
-        public static MobileServiceClient MobileService =
-                             new MobileServiceClient(
-                                                "http://projectpanda.azurewebsites.net"
-                                                );
-
-
-
-
-
-
-     
 
 
 
       
 
+
+
+
+        public static MobileServiceClient MobileService =
+                             new MobileServiceClient(
+                                                "http://projectpanda.azurewebsites.net"
+                                                );
+      
     }
 
 

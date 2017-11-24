@@ -88,19 +88,19 @@
 
             <TabbedPage.Children>
 
-                <page:ProfilePage Title="Profile" 
+                <page:ProfilePage Title="Profile" Icon="user.png"
                                       
                      />
 
-                <page:MyAppointments Title="My Appoitments"
+                <page:MyAppointments Title="My Appoitments" Icon="monthlycalendar.png"
                                          
                      />
 
-                <page:Delivery Title="Delivery"
+                <page:Delivery Title="Delivery" Icon="vansideview.png"
                                    
                     />
 
-                <page:CamPage 
+                <page:CamPage Icon="photocamera.png"
                                   
                     />
 

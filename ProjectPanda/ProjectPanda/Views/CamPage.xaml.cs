@@ -16,8 +16,9 @@ namespace ProjectPanda.Views
 		{
 			InitializeComponent ();
 
-            Camera cameraShot = new Camera();
-
+            //  Camera cameraShot = new Camera(); Not sure if we will really need this for now cause 
+            QrcodeReader qrcode = new QrcodeReader();
+            qrcode.ReadQrCode();
          
         }
 	}
