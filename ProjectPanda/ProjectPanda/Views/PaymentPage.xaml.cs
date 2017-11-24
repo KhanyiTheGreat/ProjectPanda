@@ -16,5 +16,10 @@ namespace ProjectPanda.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+
+
+
+
+    }
 }
