@@ -35,7 +35,7 @@ namespace ProjectPanda.Pages
 
 
 
-                Navigation.PushAsync(new MainProfilePage());
+                Navigation.PushModalAsync(new MainProfilePage());
      
         }
 
