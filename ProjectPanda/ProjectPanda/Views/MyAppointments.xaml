@@ -92,7 +92,7 @@
                     Image="time.png"
                     />
 
-                <TimePicker Grid.Row="3" HeightRequest="49" WidthRequest="22" BackgroundColor="Gray" Opacity="0" x:Name="Timepick"/>
+                <TimePicker Grid.Row="3" HeightRequest="49" WidthRequest="22" BackgroundColor="Gray" Opacity="0" x:Name="Timepick" />
 
 
                 <Button Text="Schedule" 

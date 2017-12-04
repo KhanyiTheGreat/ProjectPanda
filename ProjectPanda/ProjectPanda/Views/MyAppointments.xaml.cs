@@ -30,6 +30,8 @@ namespace ProjectPanda.Views
 
         }
 
+#region EventHandlers
+
         private void schedule(object sender, EventArgs e)
         {
             //code should then book the appointment
@@ -55,6 +57,24 @@ namespace ProjectPanda.Views
 
         }
 
+
+      
+        //Might have to create a custom timepicker cause it seems that xamarin forms has not event handler for time
+
+
+
     }
+   
+    
+    
+    
+    
+    #endregion
+
+
+
+
+
+
 
 }
