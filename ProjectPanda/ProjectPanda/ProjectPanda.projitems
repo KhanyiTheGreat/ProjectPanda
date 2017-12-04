@@ -28,6 +28,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\doctorUser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GpsLocator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MedicalBuildingDataModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\patientUser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Profile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\QRCodeGen.cs" />
@@ -64,7 +65,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\AzureDataStore2.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore2.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\MockData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\PayFast.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AboutViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />

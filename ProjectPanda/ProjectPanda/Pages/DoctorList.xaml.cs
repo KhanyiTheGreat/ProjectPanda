@@ -25,7 +25,6 @@ namespace ProjectPanda.Pages
 
         protected override void OnAppearing()
         {
-            LoadListAsync();
             base.OnAppearing();
         }
 
@@ -75,7 +74,7 @@ namespace ProjectPanda.Pages
 
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-
+// some code
         }
 
     }

@@ -20,6 +20,7 @@ namespace ProjectPanda.Models
         #region DocOnCall
         string text = string.Empty;
         string Varsity1 = string.Empty;
+
         public string Name1
         {
             get { return Name1; }
@@ -35,39 +36,15 @@ namespace ProjectPanda.Models
 
 
 
-        public static ObservableCollection<DocAvaliable> ToEnumerableASync()
-        {
-
-
-            // need to add some code.
-            return DocList;
-        }
+       
 
 
 
 
-        internal static Task GetList()
-        {
-            throw new NotImplementedException();
-        }
-        #region ObservableCOllectionCOllection=>DocAvaliable
-        public static ObservableCollection<DocAvaliable> DocList = new ObservableCollection<DocAvaliable>
-        {
-            new DocAvaliable {ID=1,Name="Dr Zulu", Varsity="MBchB(Ukzn)" },
-            new DocAvaliable {ID=2,Name="Dr Naidoo", Varsity="MBchB(Wits)" },
-            new DocAvaliable {ID=3,Name="Dr Duma", Varsity="MBchB(UWC),FC Orth(SA),Mmed Ortho(Natal)" },
-            new DocAvaliable {ID=4,Name="Dr McGhee", Varsity="MBchB(UCT)" },
-            new DocAvaliable {ID=5,Name="Dr Nobody", Varsity="MBchB(UL)" },
-            new DocAvaliable {ID=6,Name="Dr 50Cent", Varsity="MBchB(Stellenbosch)" }
+        
+       
 
-
-        };
-
-        internal void Add(DocAvaliable doctorOnCall)
-        {
-            throw new NotImplementedException();
-        }
-        #endregion
+       
 
     }
 }
