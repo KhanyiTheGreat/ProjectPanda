@@ -48,7 +48,10 @@ namespace ProjectPanda.Views
         private void PickDateForAppointment(object sender, DateChangedEventArgs e) {
 
             //This event handler will return the selected date for appointments
+            TheDateForAppointment.Text = e.NewDate.ToString();
 
+
+            //This should also have a method for sending the time picked to the
 
         }
 
