@@ -30,7 +30,7 @@ namespace ProjectPanda.Views
 
         }
 
-#region EventHandlers
+       #region EventHandlers
 
         private void schedule(object sender, EventArgs e)
         {
