@@ -130,7 +130,7 @@
                         <FormattedString >
                             <Span Text= "Date:" />
                             <Span Text=" "/>
-                            <Span  Text="{Binding x:TheDateForAppointment}" x:Name="TheDateForAppointment"/>
+                            <Span  Text="" x:Name="TheDateForAppointment" />
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -141,7 +141,7 @@
                         <FormattedString>
                             <Span Text="Time :"/>
                             <Span Text=" "/>
-                            <Span Text="{Binding x:TheTimeForAppointment}" x:Name="TheTimeForAppointment"/>
+                            <Span Text="" x:Name="TheTimeForAppointment"/>
                         </FormattedString>
                     </Label.FormattedText>
                     
@@ -163,7 +163,7 @@
                         <FormattedString>
                             <Span Text="Doctor :"/>
                             <Span Text=" "/>
-                            <Span Text="{Binding x:NameOfDoctor}" x:Name="NameOfDoctor"/>
+                            <Span Text="" x:Name="NameOfDoctor"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
