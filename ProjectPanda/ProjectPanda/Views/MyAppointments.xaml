@@ -129,7 +129,8 @@
                     <Label.FormattedText>
                         <FormattedString >
                             <Span Text= "Date:" />
-                            <Span  Text="             20/23/2018" x:Name="TheDateForAppointment"/>
+                            <Span Text=" "/>
+                            <Span  Text="{Binding x:TheDateForAppointment}" x:Name="TheDateForAppointment"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -139,7 +140,8 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Time :"/>
-                            <Span Text="               12:05:10 " x:Name="TheTimeForAppointment"/>
+                            <Span Text=" "/>
+                            <Span Text="{Binding x:TheTimeForAppointment}" x:Name="TheTimeForAppointment"/>
                         </FormattedString>
                     </Label.FormattedText>
                     
@@ -160,6 +162,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Doctor :"/>
+                            <Span Text=" "/>
                             <Span Text="{Binding x:NameOfDoctor}" x:Name="NameOfDoctor"/>
                         </FormattedString>
                     </Label.FormattedText>
