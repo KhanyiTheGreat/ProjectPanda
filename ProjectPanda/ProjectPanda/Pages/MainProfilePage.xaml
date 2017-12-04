@@ -15,10 +15,10 @@
 
 
 
-                        
 
 
-                        <Button x:Name="Menu_btn3" 
+
+                    <Button x:Name="Menu_btn3" 
                              Text="Payments" 
                               BackgroundColor="LightGreen" 
                                BorderWidth="2"
@@ -30,14 +30,14 @@
                               TextColor="Black"
                               Clicked="Menu_btn3_Clicked" 
                               Image="creditcard.png"
-                         >
-                          
+                         />
 
 
-                        </Button>
 
 
-                        <Button x:Name="Menu_btn2"
+
+
+                    <Button x:Name="Menu_btn2"
                                 Text="Settings"
                                 BackgroundColor="LightGreen" 
                                 BorderWidth="2"
@@ -50,13 +50,13 @@
                                 TextColor="Black"
                                 Clicked="Menu_btn2_Clicked"
                                 Image="settings.png"
-                        >
-                           
-
-                        </Button>
+                        />
 
 
-                        <Button x:Name="Menu_btn4" 
+
+
+
+                    <Button x:Name="Menu_btn4" 
                                  Text="Contact us"
                                 BackgroundColor="LightGreen"
                                BorderWidth="2"
@@ -69,15 +69,15 @@
                                 TextColor="Black"
                                 Clicked="Menu_btn4_Clicked"
                                Image="contactus.png"
-                         >
-                            
+                         />
 
-                        </Button>
+
+
 
 
                     <Button Text="Log out" HorizontalOptions="Center" BackgroundColor="LightGreen" BorderColor="Black" BorderWidth="2" Margin="20" TextColor="Black"  Clicked="Logout"/>
 
-                    </StackLayout>
+                    </StackLayout><!--Tabb.MasterPage(Menu)-->
                 </ContentPage.Content>
             </ContentPage>
         </MasterDetailPage.Master>

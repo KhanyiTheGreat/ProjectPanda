@@ -25,10 +25,13 @@ namespace ProjectPanda.Services
 
         public async Task<IEnumerable<DocAvaliable>> GetDoctorsListAsync(bool forceRefresh = false)
         {
-            await DocInitialize();
+            /// <summary>
+            /// Refersh button command for list implementation
+            /// </summary>
+            await DocInitialize(); 
             if (forceRefresh)
                 await DocPullLatestAsync();
-            return await DoctorOnCallTable.ToEnumerableAsync();
+            return await DoctorOnCallTable.ToEnumerableAsync(); //suppose to return the database with the doctorlist in it
         }
         public async Task<DocAvaliable> GetDoctorsListAsync(string doctorOnCall)
         {
@@ -38,7 +41,7 @@ namespace ProjectPanda.Services
 
             if (doctors == null || doctors.Count == 0)
                 return null;
-
+            //might have to add a else statement when ` 'doctor.count' !=0; `
             return doctors[0];
 
         }
@@ -89,13 +92,14 @@ namespace ProjectPanda.Services
 
         public async Task<bool> DocPullLatestAsync()
         {
-            if (!CrossConnectivity.Current.IsConnected)
+            if (!CrossConnectivity.Current.IsConnected)//James plugin to check if your still connected to the internet
             {
                 Debug.WriteLine("Unable to show avalibale doctors, since your offline");
                 return false;
             }
             try
             {
+                //Tries to pull the list again
                // await DoctorOnCallTable.PullAsync($"all{typeof(DocAvaliable).Name}", DoctorOnCallTable.CreateQuery());
                 return false;
             }

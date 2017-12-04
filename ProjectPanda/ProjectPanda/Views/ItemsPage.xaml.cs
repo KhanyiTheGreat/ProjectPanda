@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ProjectPanda.ViewModels;
+using ProjectPanda.Models;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using ProjectPanda.Models;
 namespace ProjectPanda.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -27,7 +28,7 @@ namespace ProjectPanda.Views
             if (item == null)
                 return;
 
-            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+            
 
             // Manually deselect item
             ItemsListView.SelectedItem = null;
