@@ -30,6 +30,8 @@ namespace ProjectPanda.Views
 
         }
 
+#region EventHandlers
+
         private void schedule(object sender, EventArgs e)
         {
             //code should then book the appointment
@@ -44,6 +46,35 @@ namespace ProjectPanda.Views
         }
 
 
+
+        private void PickDateForAppointment(object sender, DateChangedEventArgs e) {
+
+            //This event handler will return the selected date for appointments
+            TheDateForAppointment.Text = e.NewDate.ToString();
+
+
+            //This should also have a method for sending the time picked to the
+
+        }
+
+
+      
+        //Might have to create a custom timepicker cause it seems that xamarin forms has not event handler for time
+
+
+
     }
+   
+    
+    
+    
+    
+    #endregion
+
+
+
+
+
+
 
 }
