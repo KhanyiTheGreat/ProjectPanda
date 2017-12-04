@@ -44,6 +44,14 @@ namespace ProjectPanda.Views
         }
 
 
+
+        private void PickDateForAppointment(object sender, DateChangedEventArgs e) {
+
+            //This event handler will return the selected date for appointments
+
+
+        }
+
     }
 
 }

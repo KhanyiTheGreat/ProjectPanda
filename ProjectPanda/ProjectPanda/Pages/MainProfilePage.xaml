@@ -4,6 +4,7 @@
              x:Class="ProjectPanda.Pages.MainProfilePage"
               xmlns:page="clr-namespace:ProjectPanda.Views"    
              Title="Project Panda"
+                 MasterBehavior="Popover"
                   >
     
         <!--SideMenu details-->
@@ -88,21 +89,21 @@
 
             <TabbedPage.Children>
 
-                <page:ProfilePage Title="Profile" Icon="user.png"
+                <page:ProfilePage Title="Profile" Icon="user.png" />
                                       
-                     />
+                    
 
-                <page:MyAppointments Title="My Appoitments" Icon="monthlycalendar.png"
+                <page:MyAppointments Title="My Appoitments" Icon="monthlycalendar.png" />
                                          
-                     />
+               
 
-                <page:Delivery Title="Delivery" Icon="vansideview.png"
+                <page:Delivery Title="Delivery" Icon="vansideview.png" />
                                    
-                    />
+                   
 
-                <page:CamPage Icon="photocamera.png"
+                <page:CamPage Icon="photocamera.png" />
                                   
-                    />
+                   
 
             </TabbedPage.Children>
 
