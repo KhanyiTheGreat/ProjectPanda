@@ -6,42 +6,96 @@
 
         <ScrollView>
 
-            <StackLayout BackgroundColor="LimeGreen">
-                <Button Clicked="Delivery_Button_Clicked"/>
+            <StackLayout >
 
-                <Frame OutlineColor="Black"/>
-                <Label Text="Prescription" HorizontalOptions="StartAndExpand" BackgroundColor="Gray" TextColor="Black"/>
+                <StackLayout Margin="15,20,15,10">
+                    <Frame OutlineColor="Black" BackgroundColor="#ccdbc3" HeightRequest="23" CornerRadius="0">
+
+                        <Label Text="Prescription" HorizontalOptions="Center" FontSize="20" TextColor="Black"/>
+
+                    </Frame>
+                </StackLayout>
 
 
-                <Frame OutlineColor="Black" WidthRequest="294" HeightRequest="107">
-                    <Label x:Name="PrescriptionBox"/>
-                </Frame>
+                <StackLayout Margin="15,15,15,0">
+                    <Frame BackgroundColor="White"  WidthRequest="20" HeightRequest="200" OutlineColor="Black"  CornerRadius="8">
 
-                <Button Text="Schedule" HorizontalOptions="Center" BorderColor="Black" BackgroundColor="Green"/>
-                <!-- the button to get the medicine, which will have a prompt to verify the scheduled delivery-->
+                    </Frame>
+                </StackLayout>
 
-                <Frame OutlineColor="Black">
-                    <Label Text="Delivery history" HorizontalOptions="StartAndExpand" BackgroundColor="Gray"/>
-                    <!--this will be the heading for delivery history-->
-                </Frame>
 
-                <Frame OutlineColor="Black" >
-                    <Label Text="Date:" HorizontalOptions="StartAndExpand" BackgroundColor="Gray"/>
+
+                <StackLayout Margin="0,20,0,10" >
+                    <Button Text="Schedule Delivery" HorizontalOptions="Center" BorderWidth="2" BackgroundColor="DarkGreen" BorderColor="Black" />
+
+                    <!-- the button to get the medicine, which will have a prompt to verify the scheduled delivery-->
+                </StackLayout>
+
+
+                <StackLayout Margin="15,20,15,20">
+                    <Frame OutlineColor="Black" BackgroundColor="#ccdbc3" CornerRadius="0" HeightRequest="23">
+                        <Label Text="Delivery history" HorizontalOptions="Center" TextColor="Black" FontSize="18"/>
+                        <!--this will be the heading for delivery history-->
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Margin="15,10,15,9">
+
                     <!--the list of information of the date, time, place, medicines and deliverer-->
-                </Frame>
+                    <Frame OutlineColor="Black" BackgroundColor="White" CornerRadius="8">
+                        <Label  FontSize="18" TextColor="Black">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Date:"/>
+                                    <Span Text=""/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
 
-                <Frame OutlineColor="Black">
-                    <Label Text="Time:" HorizontalOptions="StartAndExpand" BackgroundColor="Gray"/>
-                </Frame>
+                    </Frame>
+                </StackLayout>
 
-                <Frame OutlineColor="Black">
-                    <Label Text="Place:" HorizontalOptions="StartAndExpand" BackgroundColor="Gray"/>
-                </Frame>
 
-                <Frame OutlineColor="Black">
+                <StackLayout Margin="15,10,15,9">
+                    <Frame OutlineColor="Black" BackgroundColor="White" CornerRadius="8">
+                        <Label  TextColor="Black" FontSize="18">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Time:"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Frame>
+                </StackLayout>
 
-                    <Label Text="Medicine(s):" HorizontalOptions="StartAndExpand" BackgroundColor="Gray"/>
-                </Frame>
+                <StackLayout Margin="15,10,15,9">
+                    <Frame OutlineColor="Black" BackgroundColor="White" CornerRadius="8">
+                        <Label  FontSize="18" TextColor="Black">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Place:" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Margin="15,10,15,9">
+                    <Frame OutlineColor="Black" CornerRadius="8">
+
+                        <Label  BackgroundColor="White" FontSize="18" TextColor="Black">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Medicine(s):"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+
+                    </Frame>
+                </StackLayout>
+
+
 
             </StackLayout>
         </ScrollView>

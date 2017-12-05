@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProjectPanda.Views.MyAppointments">
+             x:Class="ProjectPanda.Views.MyAppointments"
+             BackgroundColor="#92da69"
+             >
     <ContentPage.Content>
-       
-        
+
+
         <ScrollView>
 
-            <Grid BackgroundColor="#92da69" >
+            <Grid >
                 <Grid.ColumnDefinitions>
 
                 </Grid.ColumnDefinitions>
@@ -28,151 +30,179 @@
 
                 </Grid.RowDefinitions>
 
-                <StackLayout HorizontalOptions="Center" Margin="20,20,20,20">             
-                
-                <Label  Text="Set Appointment" FontSize="25"
+                <StackLayout  Margin="15,20,15,18">
+                    <Frame BackgroundColor="#ccdbc3" OutlineColor="Black">
+                        <Label  Text="Set Appointment" FontSize="25"
                       
                     VerticalTextAlignment="Center"
                     TextColor="Black" 
-                    HeightRequest="27"
+                    HeightRequest="35"
                     HorizontalTextAlignment="Center" 
                     Grid.Row="0"
                  
                      
                     />
+
+                    </Frame>
                 </StackLayout>
-                
-                <Button BackgroundColor="LightGray" 
-                    WidthRequest="23"
-                    HeightRequest="50" 
+
+
+                <StackLayout  Grid.Row="1" Margin="15,0,15,0"  >
+                    <Button BackgroundColor="LightGray" 
+                    
+                    
                     Text="Doctor"
                     TextColor="Black"
                     FontSize="17"
                     BorderColor="Black" 
                     BorderWidth="2" 
-                    Margin="15,30,15,0" 
-                    Grid.Row="1"
-                        
-                     Image="doctor.png"   
+                    HeightRequest="60"
+                   
+                     Image="doctor.png"     
+                   
                  />
+                </StackLayout>
 
 
-
-              
-
-
-
-
-                <Button TextColor="Black"
+                <StackLayout  Grid.Row="2" Margin="15,0,15,0" >
+                    <Button TextColor="Black"
                     WidthRequest="23"
-                    HeightRequest="50"
+                    HeightRequest="60"
                     BackgroundColor="LightGray"
                     Text="Date" FontSize="17" 
                     BorderColor="Black" 
                     BorderWidth="2"  
-                    Grid.Row="2"
-                   Margin="15,30,15,0" 
                    Image="calendar.png"
+                    
+                   
                   />
+                </StackLayout>
 
 
-                <DatePicker Grid.Row="2" HeightRequest="49" WidthRequest="22" BackgroundColor="Gray" Opacity="0" x:Name="Datepick" DateSelected="PickDateForAppointment"/>
+                <StackLayout Grid.Row="2" Margin="19,6,18,0">
+                    <DatePicker  HeightRequest="50" WidthRequest="10" BackgroundColor="Gray" Opacity="0" x:Name="Datepick" />
+                </StackLayout>
 
-
-                <Button TextColor="Black"
+                <StackLayout Grid.Row="3" Margin="15,0,15,10" >
+                    <Button TextColor="Black"
                     WidthRequest="23"
-                    HeightRequest="50"
+                    HeightRequest="60"
                     BackgroundColor="LightGray" 
                     Text="Time"
                     FontSize="17"
                     BorderColor="Black" 
                     BorderWidth="2"
-                    Margin="15,30,15,0" 
-                    Grid.Row="3"
+                                      
                     Image="time.png"
                     />
+                </StackLayout>
 
-                <TimePicker Grid.Row="3" HeightRequest="49" WidthRequest="22" BackgroundColor="Gray" Opacity="0" x:Name="Timepick" />
+                <StackLayout Grid.Row="3" Margin="19,6,18,0">
+                    <TimePicker  HeightRequest="50" WidthRequest="4" BackgroundColor="Gray" Opacity="0" x:Name="Timepick" />
+                </StackLayout>
 
 
-                <Button Text="Schedule" 
+                <StackLayout   Grid.Row="4" Margin="0,0,0,0">
+                    <Button Text="Schedule" 
                     WidthRequest="105" 
-                    HeightRequest="5" 
-                    TextColor="Black"
+                    HeightRequest="50" 
+                    TextColor="White"
                     BackgroundColor="DarkGreen"
                     BorderColor="Black"
                     BorderWidth="2"
                     HorizontalOptions="Center"
-                    Grid.Row="4"
-                    Margin="0,20"
+                  
+                    
                     />
+                </StackLayout>
 
 
 
-
-                <StackLayout  Grid.Row="5" HorizontalOptions="Center" Margin="0,20,0,0">
-                <Label Text="Next Appointment" 
+                <StackLayout  Grid.Row="5"  Margin="15,10,15,0">
+                    <Frame OutlineColor="Black" BackgroundColor="#ccdbc3">
+                        <Label Text="Next Appointment" 
                   
                    FontSize="25" 
                    TextColor="Black"
                    VerticalTextAlignment="Center"
                   HorizontalTextAlignment="Center"
-                      
-                   
+                                    
                         
                    
                      />
+                    </Frame>
                 </StackLayout>
 
 
-                <Label   BackgroundColor="DarkGray" TextColor="Black" Margin="15,20,15,20" FontSize="20" Grid.Row="6" VerticalTextAlignment="Center" x:Name="DateOfAppoint" LineBreakMode="TailTruncation">
-                    <Label.FormattedText>
-                        <FormattedString >
-                            <Span Text= "Date:" />
-                            <Span Text=" "/>
-                            <Span  Text="" x:Name="TheDateForAppointment" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
+                <StackLayout Grid.Row="6" Margin="15,10,15,8">
+                    <Frame  BackgroundColor="White" CornerRadius="8">
+                        <Label    TextColor="Black"  FontSize="20"  VerticalTextAlignment="Center" x:Name="DateOfAppoint" LineBreakMode="TailTruncation">
+                            <Label.FormattedText>
+                                <FormattedString >
+                                    <Span Text= "Date:" />
+                                    <Span Text=" "/>
+                                    <Span  Text="" x:Name="TheDateForAppointment" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="7" Margin="15,0,15,8">
+                    <Frame BackgroundColor="White" CornerRadius="8">
+                        <Label   TextColor="Black"  FontSize="20"  VerticalTextAlignment="Center" x:Name="TimeOfAppoint" LineBreakMode="TailTruncation">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Time :"/>
+                                    <Span Text=" "/>
+                                    <Span Text="" x:Name="TheTimeForAppointment"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+
+                        </Label>
+                    </Frame>
+                </StackLayout>
 
 
-                <Label  BackgroundColor="DarkGray" TextColor="Black" Margin="15,20,15,20" FontSize="20" Grid.Row="7" VerticalTextAlignment="Center" x:Name="TimeOfAppoint" LineBreakMode="TailTruncation">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Time :"/>
-                            <Span Text=" "/>
-                            <Span Text="" x:Name="TheTimeForAppointment"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                    
-                </Label>
+                <StackLayout Grid.Row="8" Margin="15,0,15,8"  >
+
+                    <Frame BackgroundColor="White" CornerRadius="8">
+                        <Label   TextColor="Black" FontSize="20" VerticalTextAlignment="Center" x:Name="Place" LineBreakMode="TailTruncation" >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Place:" />
+                                    <Span Text="" x:Name="NameOfPractice" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                    </Frame>
+                </StackLayout>
 
 
+                <StackLayout Grid.Row="9" Margin="15,0,15,10">
+                    <Frame BackgroundColor="White" CornerRadius="8">
+                        <Label   TextColor="Black"  FontSize="20"  VerticalTextAlignment="Center" x:Name="Doctor" LineBreakMode="TailTruncation">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Doctor :"/>
+                                    <Span Text=" "/>
+                                    <Span Text="" x:Name="NameOfDoctor"/>
+                                </FormattedString>
+                            </Label.FormattedText>
 
-                <Label  BackgroundColor="DarkGray" TextColor="Black" Margin="15,20,15,20" FontSize="20" Grid.Row="8" VerticalTextAlignment="Center" x:Name="Place" LineBreakMode="TailTruncation" >
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Place:" />
-                            <Span Text="  6 Calsi Gardens, 11 SunnySideLane" x:Name="NameOfPractice" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
+                        </Label>
+                    </Frame>
+                </StackLayout>
 
-                <Label  BackgroundColor="DarkGray" TextColor="Black" Margin="15,20,15,20" FontSize="20" Grid.Row="9" VerticalTextAlignment="Center" x:Name="Doctor" LineBreakMode="TailTruncation">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Doctor :"/>
-                            <Span Text=" "/>
-                            <Span Text="" x:Name="NameOfDoctor"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
 
-                <Button Text="Cancel" Grid.Row="10" BorderRadius="2" BorderColor="Black" BackgroundColor="Red" TextColor="White" x:Name="CancelAppoint" Clicked="Cancel"/>
+                <StackLayout Grid.Row="10">
+                    <Button Text="Cancel" BorderWidth="2"  BorderRadius="2" BorderColor="Black" BackgroundColor="Red" HorizontalOptions="Center" TextColor="White" x:Name="CancelAppoint" />
+                </StackLayout>
+
 
             </Grid>
 
         </ScrollView>
-   
     </ContentPage.Content>
 </ContentPage>
