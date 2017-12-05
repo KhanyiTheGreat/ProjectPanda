@@ -16,6 +16,8 @@ namespace ProjectPanda
 		{
 			InitializeComponent();
             Current.MainPage = new NavigationPage(new SignInPrompt());
+            //Current.MainPage = new NavigationPage(new MainProfilePage());
+
         }
 
 		protected override void OnStart ()
