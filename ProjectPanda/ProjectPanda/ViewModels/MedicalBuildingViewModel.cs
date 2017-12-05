@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using ProjectPanda.Models;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace ProjectPanda.ViewModels
