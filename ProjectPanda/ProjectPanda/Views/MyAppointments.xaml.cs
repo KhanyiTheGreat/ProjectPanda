@@ -58,10 +58,10 @@ namespace ProjectPanda.Views
         }
 
 
-      
+
         //Might have to create a custom timepicker cause it seems that xamarin forms has not event handler for time
 
-
+      
 
     }
    

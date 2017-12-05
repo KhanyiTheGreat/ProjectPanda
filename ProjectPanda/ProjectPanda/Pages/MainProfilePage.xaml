@@ -2,7 +2,7 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectPanda.Pages.MainProfilePage"
-              xmlns:page="clr-namespace:ProjectPanda.Views"    
+              xmlns:pages="clr-namespace:ProjectPanda.Views"    
              Title="Project Panda"
                  MasterBehavior="Popover"
                   >
@@ -89,19 +89,19 @@
 
             <TabbedPage.Children>
 
-                <page:ProfilePage Title="Profile" Icon="user.png" />
+                <pages:ProfilePage Title="Profile" Icon="user.png" />
                                       
                     
 
-                <page:MyAppointments Title="My Appoitments" Icon="monthlycalendar.png" />
+                <pages:MyAppointments Title="My Appoitments" Icon="monthlycalendar.png" />
                                          
                
 
-                <page:Delivery Title="Delivery" Icon="vansideview.png" />
+                <pages:Delivery Title="Delivery" Icon="vansideview.png" />
                                    
                    
 
-                <page:CamPage Icon="photocamera.png" />
+                <pages:CamPage Icon="photocamera.png" />
                                   
                    
 
