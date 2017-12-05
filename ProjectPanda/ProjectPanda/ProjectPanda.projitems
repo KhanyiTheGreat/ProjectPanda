@@ -28,6 +28,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\doctorUser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GpsLocator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MedicalBuildingDataModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\patientUser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Profile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\QRCodeGen.cs" />
@@ -64,7 +65,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\AzureDataStore2.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore2.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\MockData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\PayFast.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AboutViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ItemDetailViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ItemsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginViewMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MedicalBuildingViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MyAppointmentViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\CamPage.xaml.cs">
       <SubType>Code</SubType>
@@ -80,10 +82,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\Delivery.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\ItemDetailPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ItemsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\ItemsPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MedicalBuildingView.xaml.cs">
+      <DependentUpon>MedicalBuildingView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\MyAppointments.xaml.cs">
@@ -145,11 +148,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ItemDetailPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ItemsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -187,6 +185,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\SupportPagae.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MedicalBuildingView.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

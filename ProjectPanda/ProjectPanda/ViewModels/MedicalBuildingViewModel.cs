@@ -1,0 +1,105 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using ProjectPanda.Models;
+using System.Collections.ObjectModel;
+
+namespace ProjectPanda.ViewModels
+{
+    public class MedicalBuildingViewModel : BaseViewModel
+    {
+        public IList<MedicalBuildingDataModel> CardDataCollection { get; set; }
+
+        public object SelectedItem { get; set; }
+        public MedicalBuildingViewModel()
+        {
+            CardDataCollection = new List<MedicalBuildingDataModel>();
+            GenerateMedicalBuildingModel();
+        }
+
+        private void GenerateMedicalBuildingModel()
+        {
+            // for (var i = 0; i < 10; i++)
+            {
+                CardDataCollection = new ObservableCollection<MedicalBuildingDataModel>
+                {
+                    new MedicalBuildingDataModel
+                    {
+                     HeadTitle = " Activity rate is 150% - Clermont Clinic",
+
+                     HospBio="Clermont Clinic. We are a government/public organisation. We are a provincial primary healthcare facility providing HIV and TB-related treatment, care and support services." ,
+                     ProfileImage = "Person_7.jpg",
+                     HeadLinesDesc = "",
+
+                    },
+
+
+
+                     new MedicalBuildingDataModel
+                    {
+                     HeadTitle = " Activity rate is 15%  - Groote Schuur Hospital",
+                     HospBio= " Groote Schuur Hospital is a large, government-funded, teaching hospital situated on the slopes of Devil's Peak in the city of Cape Town, South" ,
+                     HeadLinesDesc = "The Independent is a British online newspaper.[2]............small sample based on your scenario. Please review my project and let us know",
+
+                     ProfileImage = "Person_2.png"
+                     },
+
+
+
+                      new MedicalBuildingDataModel
+                    {
+                    HeadTitle       = "Activity rate is 15% - Grey's Hospital",
+                    HospBio         ="Grey's Hospital is a referral/tertiary hospital providing 100% tertiary services to patients and is located in Pietermaritzburg " ,
+                     HeadLinesDesc     = "Microsoft Corporation (/ˈmaɪkrəˌsɒft/,[2][3] abbreviated.............small sample based on your scenario. Please review my project and let us know",
+
+                      ProfileImage     = "Person_3.png"
+                      },
+
+
+                       new MedicalBuildingDataModel
+                    {
+                    HeadTitle = " 13 hrs ago  - MacRumors ",
+                      HospBio    = "MacRumors.com is a website that aggregates Mac and Apple",
+                     HeadLinesDesc="Google Rolls Out Anti-Polishing Feature to Gmail on Ios",
+                     ProfileImage = "Person_4.jpg"
+
+                       },
+
+
+                        new MedicalBuildingDataModel
+                    {
+                    HeadTitle= " 15 hrs ago - Android Authority",
+                   HeadLinesDesc  = "If you have read Jules Verne’s Around the World...........small sample based on your scenario. Please review my project and let us know" ,
+                     HospBio="Set it and forget it : 5 Things you should always automate on your phone" ,
+                     ProfileImage = "Person_5.jpg"
+                        },
+
+
+                         new MedicalBuildingDataModel
+                    {
+                      HeadTitle = " 16 hrs ago - MacRumors",
+                      HeadLinesDesc = "MacRumors.com is a website that aggregates Mac and Apple related news................small sample based on your scenario. Please review my project and let us know,",
+                      HospBio="Set it and forget it : 5 Things you should always automate on your phone" ,
+                      ProfileImage = "Person_1.png"
+                         },
+
+
+                          new MedicalBuildingDataModel
+                    {
+                     HeadTitle = " 19 hrs ago  - Android Authority",
+                      HeadLinesDesc = "MacRumors.com is a website that aggregates Mac and Apple.........small sample based on your scenario. Please review my project and let us know",
+                      HospBio="Set it and forget it : 5 Things you should always automate on your phone" ,
+                      ProfileImage = "Person_2.png"
+                          },
+                   
+                 //   AlertColor =  Color.Green : Color.Blue,    This can be added to set alert dialog inside card data model
+                };
+
+
+
+            }
+
+        }
+
+    }
+}

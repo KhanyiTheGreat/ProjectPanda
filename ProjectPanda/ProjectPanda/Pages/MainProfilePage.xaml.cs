@@ -50,6 +50,7 @@ namespace ProjectPanda.Pages
         private void Logout(object sender, EventArgs e)
         {
             //code that will allow for logging out.
+            
         }
 
         

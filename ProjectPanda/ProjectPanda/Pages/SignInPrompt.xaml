@@ -30,7 +30,7 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <Image Source="LOGO.jpg" HeightRequest="70"  VerticalOptions="End"/>
+                    
                     <Entry Grid.Row="1" Placeholder="Email Address" PlaceholderColor="White" FontSize="17" Opacity="0.80" x:Name="emailAddress"/>
                     <Entry Grid.Row="2" Placeholder="Password" IsPassword="True" PlaceholderColor="White" FontSize="17" x:Name="password"/>
                     <Button Text="Log In" Clicked="Button_Clicked" BackgroundColor="#229122" TextColor="White" HeightRequest="50" VerticalOptions="Center"  Grid.Row="3" Margin="0,20,0,20"/>
