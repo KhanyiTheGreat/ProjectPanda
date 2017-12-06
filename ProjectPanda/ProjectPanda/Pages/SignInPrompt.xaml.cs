@@ -22,7 +22,7 @@ namespace ProjectPanda.Pages
 
 
 
-         private  void  Button_Clicked(object sender, EventArgs e)
+         async void  Button_Clicked(object sender, EventArgs e)
         {
 
 
@@ -35,7 +35,7 @@ namespace ProjectPanda.Pages
 
 
 
-            Navigation.PushModalAsync(new MainProfilePage());
+           await Navigation.PushModalAsync(new MainProfilePage());
            // Navigation.PushAsync(new DetailPageForFilling());
      
         }
