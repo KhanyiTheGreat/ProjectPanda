@@ -79,10 +79,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\Delivery.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\DoctorListView.xaml.cs">
-      <DependentUpon>DoctorListView.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\MedicalBuildingView.xaml.cs">
       <DependentUpon>MedicalBuildingView.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -178,12 +174,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MedicalBuildingView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DoctorListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
