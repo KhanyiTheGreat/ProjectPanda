@@ -43,7 +43,7 @@ namespace ProjectPanda.Pages
 
 
          void Button_Clicked(object sender, EventArgs e)
-            =>  new NavigationPage(new DoctorList());
+            =>  new NavigationPage();//doctorlist
 
 
 
