@@ -17,6 +17,9 @@ namespace ProjectPanda.Models
         public String Varsity { get; set; }
         public string DocsImageUrl { get; set; } // must add images to database
         #endregion
+      
+        
+        
         #region DocOnCall
         string text = string.Empty;
         string Varsity1 = string.Empty;
@@ -36,13 +39,7 @@ namespace ProjectPanda.Models
 
 
 
-       
-
-
-
-
-        
-       
+                
 
        
 

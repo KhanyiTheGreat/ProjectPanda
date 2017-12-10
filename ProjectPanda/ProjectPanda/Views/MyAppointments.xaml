@@ -186,7 +186,7 @@
                             <Label.FormattedText>
                                 <FormattedString>
                                     <Span Text="Doctor :"/>
-                                    <Span Text=" "/>
+                                    <Span Text=""/>
                                     <Span Text="" x:Name="NameOfDoctor"/>
                                 </FormattedString>
                             </Label.FormattedText>
