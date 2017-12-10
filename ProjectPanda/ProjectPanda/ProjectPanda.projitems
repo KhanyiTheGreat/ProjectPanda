@@ -45,9 +45,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\MainProfilePage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\PaymentHistory.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
