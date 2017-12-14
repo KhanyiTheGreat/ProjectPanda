@@ -21,7 +21,10 @@ namespace ProjectPanda.Models
     {
         //this method uses the haversine algorithim
 
-        #region distance calculator 
+       
+            
+            
+         #region distance calculator 
         //method for calulating distance between user and location
         public double DistanceCalculator(double latitude1, double latitude2, double longitude1, double longitude2)
         {
@@ -29,6 +32,8 @@ namespace ProjectPanda.Models
                 latitude1 and longitude1-user current location 
                 
                 latitude2 and longitude2-practice location
+
+                 L1 and L2 will be taken from the gpslocator class
              
              */
 
