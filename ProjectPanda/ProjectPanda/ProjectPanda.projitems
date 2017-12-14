@@ -189,5 +189,8 @@
     <Page Include="$(MSBuildThisFileDirectory)Pages\palatie.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Services\Page1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 </Project>

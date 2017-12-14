@@ -14,7 +14,7 @@ namespace ProjectPanda.Cells.CardView
 	{
 		public CardViewTemplate ()
 		{
-			InitializeComponent ();
+			//InitializeComponent ();
 		}
 	}
 }
