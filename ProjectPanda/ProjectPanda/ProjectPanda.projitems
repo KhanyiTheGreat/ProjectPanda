@@ -14,8 +14,8 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)AzureService\RegistredPatientsBackEnd.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cells\CardView\CardViewDataSelector.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Cells\CardView\CardViewTemplate.xaml.cs">
-      <DependentUpon>CardViewTemplate.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Cells\CardView\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\MessengingCenterAlert.cs" />
@@ -186,6 +186,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Cells\CardView\Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <Page Include="$(MSBuildThisFileDirectory)Pages\palatie.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
