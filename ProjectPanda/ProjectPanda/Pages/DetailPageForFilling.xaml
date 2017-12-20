@@ -8,59 +8,38 @@
     <ContentPage.Content>
         <ScrollView>
 
-            <Grid BackgroundColor="#92da69" Padding="30">
-                <Grid.ColumnDefinitions>
 
-                </Grid.ColumnDefinitions>
+            <StackLayout Padding="5">
 
-                <Grid.RowDefinitions>
 
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-
-                </Grid.RowDefinitions>
-
-                <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#92da69" Grid.Row="0"  Margin="0,0, 0,50">
-                    <Label />
+                <StackLayout  Margin="5,5,5,20">
+                    <Entry BackgroundColor="#92da69"   Placeholder="First Name" PlaceholderColor="Black" Opacity="1" FontSize="18"/>
                 </StackLayout>
 
 
-                <StackLayout  Grid.Row="1" BackgroundColor="#92da69">
-                    <Entry BackgroundColor="#92da69"   Placeholder="First Name" PlaceholderColor="White" Opacity="1" FontSize="12"/>
+                <StackLayout  Margin="5,5,5,20">
+                    <Entry BackgroundColor="#92da69"  Placeholder="Surname" PlaceholderColor="Black" Opacity="1" FontSize="18"/>
+                </StackLayout>
+
+                <StackLayout  Margin="5,5,5,20" >
+                    <Entry BackgroundColor="#92da69"    Placeholder="Email Address" PlaceholderColor="Black" Opacity="1" Keyboard="Email" FontSize="18"/>
+                </StackLayout>
+
+                <StackLayout   Margin="5,5,5,20" >
+                    <Entry BackgroundColor="#92da69"   Placeholder="Cell number" PlaceholderColor="Black" Opacity="1" Keyboard="Numeric" FontSize="18"/>
+                </StackLayout>
+
+                <StackLayout  Margin="5,5,5,20" >
+                    <Entry BackgroundColor="#92da69"    Placeholder="Chronic Disease(s)" PlaceholderColor="Black" Opacity="1" FontSize="18"/>
+                </StackLayout>
+
+                <StackLayout   Margin="5,5,5,20">
+                    <Entry BackgroundColor="#92da69"  Placeholder="Allergies" PlaceholderColor="Black" Opacity="1" FontSize="18"/>
                 </StackLayout>
 
 
-                <StackLayout Grid.Row="2" BackgroundColor="#92da69" >
-                    <Entry BackgroundColor="#92da69"  Placeholder="Surname" PlaceholderColor="White" Opacity="1" FontSize="12"/>
-                </StackLayout>
-
-                <StackLayout Grid.Row="3" BackgroundColor="#92da69" >
-                    <Entry BackgroundColor="#92da69"    Placeholder="Email Address" PlaceholderColor="White" Opacity="1" Keyboard="Email" FontSize="12"/>
-                </StackLayout>
-
-                <StackLayout Grid.Row="4" BackgroundColor="#92da69"  >
-                    <Entry BackgroundColor="#92da69"   Placeholder="Cell number" PlaceholderColor="White" Opacity="1" Keyboard="Numeric" FontSize="12"/>
-                </StackLayout>
-
-                <StackLayout Grid.Row="5" BackgroundColor="#92da69" >
-                    <Entry BackgroundColor="#92da69"    Placeholder="Chronic Disease(s)" PlaceholderColor="White" Opacity="1" FontSize="12"/>
-                </StackLayout>
-
-                <StackLayout Grid.Row="6" BackgroundColor="#92da69" >
-                    <Entry BackgroundColor="#92da69"  Placeholder="Allergies" PlaceholderColor="White" Opacity="1" FontSize="12"/>
-                </StackLayout>
-
-
-                <StackLayout Grid.Row="7" BackgroundColor="#92da69" >
-                    <Picker x:Name="picker" Title="Blood Type" BackgroundColor="#92da69" TextColor="White" Opacity="1"  >
+                <StackLayout  Margin="5,5,5,20">
+                    <Picker x:Name="picker" Title="Blood Type" BackgroundColor="#92da69" TextColor="Black" Opacity="1"  >
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>O-Postive</x:String>
@@ -78,9 +57,9 @@
 
                 </StackLayout>
 
-                <StackLayout Grid.Row="8" BackgroundColor="#92da69">
+                <StackLayout   Margin="5,5,5,20">
 
-                    <Picker x:Name="picker2" Title="Medical Aid" BackgroundColor="#92da69" TextColor="White" Opacity="1" >
+                    <Picker x:Name="picker2" Title="Medical Aid" BackgroundColor="#92da69" TextColor="Black" Opacity="1" >
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>Discovery Health</x:String>
@@ -107,8 +86,32 @@
 
 
 
-            </Grid>
 
+                <StackLayout>
+                    <TableView Intent="Settings">
+                        <TableRoot>
+                            <TableSection >
+                                <SwitchCell Text="Do you have Dependents"  x:Name="SwitchIsOn"  On="False" OnChanged="SwitchCell_OnChanged" >
+
+                                </SwitchCell>
+                            </TableSection>
+                        </TableRoot>
+                    </TableView>
+                </StackLayout>
+
+
+                <StackLayout x:Name="DependencyForm" BindingContext="x:Refrence SwitchIsOn" IsVisible="{Binding SwitchIsOn}" IsEnabled="{Binding SwitchIsOn}">
+
+
+
+                </StackLayout>
+
+
+                <StackLayout >
+                    <Button Text="Continue >" BackgroundColor="#92da69" FontSize="20" HorizontalOptions="End"/>
+                </StackLayout>
+
+            </StackLayout>
 
         </ScrollView>
     </ContentPage.Content>

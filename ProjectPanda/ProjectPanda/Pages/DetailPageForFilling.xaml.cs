@@ -16,5 +16,10 @@ namespace ProjectPanda.Pages
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void SwitchCell_OnChanged(object sender, ToggledEventArgs e)
+        {
+            //code to reveal the dependency form to be filled 
+        }
+    }
 }
