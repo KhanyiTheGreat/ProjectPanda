@@ -82,31 +82,12 @@
             </ContentPage>
         </MasterDetailPage.Master>
 
+       
+    <!--The code for the manually congguired tabbed pages-->
+    
         <MasterDetailPage.Detail>
 
-        <TabbedPage xmlns:Page="clr-namespace:ProjectPanda.Views">
-
-                <TabbedPage.Children >
-
-                   <Page:ProfilePage Title="Profile" Icon="user.png" />
-
-
-
-                 <Page:MyAppointments Title="My Appoitments" Icon="monthlycalendar.png" />
-
-
-
-                <Page:Delivery Title="Delivery" Icon="vansideview.png" />
-
-
-
-                <Page:CamPage Icon="photocamera.png" />
-
-
-
-            </TabbedPage.Children>
-
-            </TabbedPage>
+     
         </MasterDetailPage.Detail>
 
     
