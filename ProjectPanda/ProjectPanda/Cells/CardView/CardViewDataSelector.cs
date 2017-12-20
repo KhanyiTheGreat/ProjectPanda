@@ -7,5 +7,7 @@ namespace ProjectPanda.Cells.CardView
     public class CardViewDataSelector 
     {
         //readonly DataTemplate normalTemplate;
+
+
     }
 }

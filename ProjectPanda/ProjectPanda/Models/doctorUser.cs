@@ -12,6 +12,7 @@ namespace ProjectPanda.Models
 
         [Microsoft.WindowsAzure.MobileServices.Version]
         public string AzureVersion { get; set; } // meant for sync purposes
+
                                                  /*  [Newtonsoft.Json.JsonIgnore]
                                                    public string Emailaddress { get { return Email } }
                                                    [Newtonsoft.Json.JsonIgnore]
@@ -20,23 +21,23 @@ namespace ProjectPanda.Models
 
 
 
-        public doctorUser()
-        {
+        /**        public doctorUser()
+                {
 
-            void doctorUser(string Email, string Password) //storing data to direct location
-            {
-                this.Email = Email;
-                this.Password = Password;
-            }
+                    void doctorUser(string Email, string Password) //storing data to direct location
+                    {
+                        this.Email = Email;
+                        this.Password = Password;
+                    }
 
-            bool CheckInformation()
-            {
-                if (!this.Email.Equals(" ") && !this.Password.Equals(" "))
-                    return true;
-                else
-                    return false;
-            }
+                    bool CheckInformation()
+                    {
+                        if (!this.Email.Equals(" ") && !this.Password.Equals(" "))
+                            return true;
+                        else
+                            return false;
+                    }
 
-        }
+                }*/
     }
 }
