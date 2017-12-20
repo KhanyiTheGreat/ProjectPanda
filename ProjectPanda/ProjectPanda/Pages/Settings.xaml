@@ -1,75 +1,149 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProjectPanda.Pages.Settings">
+             x:Class="ProjectPanda.Pages.Settings"
+             Title="Settings"
+            BackgroundColor="#92da69"
+             >
     <ContentPage.Content>
-
 
         <ScrollView>
 
-            <Grid BackgroundColor="#92da69" >
-                <Grid.ColumnDefinitions>
+            <StackLayout>
 
-                </Grid.ColumnDefinitions>
-
-                <Grid.RowDefinitions>
-
-                    <RowDefinition Height="60"/>
-                    <RowDefinition Height="200"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-
-                </Grid.RowDefinitions>
-
-                <StackLayout BackgroundColor="DarkGreen" >
-                    <Label Text="Settings" TextColor="Black" HorizontalOptions="Center" Margin="0, 15, 0, 0" FontSize="25" VerticalTextAlignment="Center" />
+                <StackLayout>
+                    <Label FontSize="25" Text="Personal Information" Margin="10,10,0,10" TextColor="White"/>
                 </StackLayout>
 
 
-                <Image Grid.Row="1" BackgroundColor="Gray" Margin="80,40,80,10"   />
+                <StackLayout>
 
-                <StackLayout Grid.Row="2" >
+                    <Grid>
 
-                    <Entry Placeholder="User Name"  PlaceholderColor="Black" Margin="30,20,30,20" VerticalOptions="Start" BackgroundColor="White" HorizontalTextAlignment="Center" Opacity="0.90"/>
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="350"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+
+
+
+                        </Grid.RowDefinitions>
+
+
+
+
+                        <StackLayout Grid.Row="0" Margin="15,10,15,5" BackgroundColor="#ccdbc3" WidthRequest="90" HeightRequest="300" >
+                            <TableView Intent="Settings">
+                                <TableRoot>
+                                    <TableSection >
+
+                                        <EntryCell Label="Address Line 1:" Placeholder="6 Calsi gardens"   LabelColor="Black" HorizontalTextAlignment="Center"/>
+
+                                        <EntryCell Label="Address Line 2:" Placeholder="11 Sunnyside Lane" LabelColor="Black" HorizontalTextAlignment="Center"/>
+
+                                        <EntryCell Label="City/Town:" LabelColor="Black" Placeholder="Pinetown" HorizontalTextAlignment="Center"/>
+
+                                        <EntryCell Label="Postal code:" LabelColor="Black" Placeholder="3610" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+
+
+
+
+
+                                    </TableSection>
+                                </TableRoot>
+                            </TableView>
+
+
+
+
+                        </StackLayout>
+
+
+
+                        <StackLayout Grid.Row="1"  Margin="10,10,0,10" >
+                            <Label Text="Appointment Settings"  FontSize="25" TextColor="White" />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="2" BackgroundColor="#ccdbc3" Margin="10,10,10,10">
+
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+
+                                </Grid.RowDefinitions>
+
+                                <StackLayout Grid.Row="0">
+                                    <Label Text="Distance radius" HorizontalOptions="Center" TextColor="Black" FontSize="22" />
+                                </StackLayout>
+
+
+
+
+                                <StackLayout Grid.Row="1" >
+
+                                    <Label FontSize="20" Margin="12,10,0,10" TextColor="Black" >
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="Kilometers:" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </StackLayout>
+
+                                <StackLayout Grid.Row="3">
+                                    <Slider/>
+                                </StackLayout>
+
+                            </Grid>
+                        </StackLayout>
+
+
+
+
+
+
+
+
+
+                        <StackLayout Grid.Row="4">
+                            <Button Text="Save" HorizontalOptions="Center" WidthRequest="200"/>
+                        </StackLayout>
+
+
+
+
+
+
+                    </Grid>
+
+
+
+
+
+
+
+
+
 
                 </StackLayout>
 
 
 
-                <StackLayout Grid.Row="3" >
 
 
-                    <Entry Placeholder="Blood type" Margin="30,20,30,20" PlaceholderColor="Black"  BackgroundColor="White" HorizontalTextAlignment="Center" Opacity="0.90"/>
-
-                </StackLayout>
-
-
-                <StackLayout Grid.Row="4" >
-
-                    <Entry Placeholder="Medical Aid"  PlaceholderColor="Black" Margin="30,20,30,20" BackgroundColor="White" HorizontalTextAlignment="Center" Opacity="0.90"/>
-
-                </StackLayout>
-
-                <Label Text="Distance" FontSize="25"  TextColor="Black" Margin="130,10,0,10" Grid.Row="5"/>
-
-
-                <StackLayout Grid.Row="7" >
-                    <Label Text=" Kilometers:" TextColor="GhostWhite" Grid.Row="6" Margin="20,0,0,0" FontSize="20"/>
-
-                    <Slider TranslationY="0"/>
-
-                </StackLayout>
-
-            </Grid>
-
-
+            </StackLayout>
         </ScrollView>
+
+
 
 
     </ContentPage.Content>
