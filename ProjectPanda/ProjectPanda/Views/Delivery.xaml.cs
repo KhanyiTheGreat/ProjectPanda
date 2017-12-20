@@ -15,7 +15,7 @@ namespace ProjectPanda.Views
 	{
 
         public Delivery delivery { get; set; }
-        public PayFast payFast { get; set; }
+       
 
         public Delivery ()
 		{
