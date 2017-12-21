@@ -82,32 +82,72 @@
             </ContentPage>
         </MasterDetailPage.Master>
 
+       
+    <!--The code for the manually congguired tabbed pages-->
+    
         <MasterDetailPage.Detail>
+        <ContentPage>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="44"/>
+            </Grid.RowDefinitions>
+            <ContentView x:Name="PlaceHolder" Grid.Row="0"/>
+            <BoxView BackgroundColor="Azure" Grid.Row="1"/>
+            <!--This will be the tab bar-->
 
-        <TabbedPage xmlns:Page="clr-namespace:ProjectPanda.Views">
+            <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-                <TabbedPage.Children >
+                <!--This Will be the TabItems-->
+                <StackLayout Spacing="0" Grid.Column="0" BackgroundColor="Azure">
+                    <Image HeightRequest="30" Source=""/>
+                    <Label Text="Profile" Font="10"
+                       HorizontalOptions="Center"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerProfile"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
 
-                   <Page:ProfilePage Title="Profile" Icon="user.png" />
+                <StackLayout Spacing="0" Grid.Column="1" BackgroundColor="Azure">
+                    <Image HeightRequest="30" Source=""/>
+                    <Label Text="Profile" Font="10"
+                       HorizontalOptions="Center"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerDelivery"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
 
+                <StackLayout Spacing="0" Grid.Column="2" BackgroundColor="Azure">
+                    <Image HeightRequest="30" Source=""/>
+                    <Label Text="Profile" Font="10"
+                       HorizontalOptions="Center"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerAppointment"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
 
+                <StackLayout Spacing="0" Grid.Column="3" BackgroundColor="Azure">
+                    <Image HeightRequest="30" Source=""/>
+                    <Label Text="Profile" Font="10"
+                       HorizontalOptions="Center"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerCamera"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
 
-                 <Page:MyAppointments Title="My Appoitments" Icon="monthlycalendar.png" />
-
-
-
-                <Page:Delivery Title="Delivery" Icon="vansideview.png" />
-
-
-
-                <Page:CamPage Icon="photocamera.png" />
-
-
-
-            </TabbedPage.Children>
-
-            </TabbedPage>
-        </MasterDetailPage.Detail>
+             
+            </Grid>
+        </Grid>
+        </ContentPage>
+    </MasterDetailPage.Detail>
 
     
 </MasterDetailPage>
