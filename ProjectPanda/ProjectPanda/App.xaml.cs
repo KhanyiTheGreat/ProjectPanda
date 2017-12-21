@@ -15,13 +15,15 @@ namespace ProjectPanda
         public App ()
 		{
 			InitializeComponent();
-             Current.MainPage = new NavigationPage(new SignInPrompt());
+            //   Current.MainPage = new NavigationPage(new SignInPrompt());
+
             //Current.MainPage = new NavigationPage(new MainProfilePage());
 
-           // Current.MainPage = new NavigationPage(new Demo_Delete_when_done_.MainPage());
+            // Current.MainPage = new NavigationPage(new Demo_Delete_when_done_.MainPage());
+
+            Current.MainPage = new NavigationPage(new ProfilePage1());
 
 
-          
 
         }
 

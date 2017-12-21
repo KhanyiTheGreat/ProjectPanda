@@ -18,7 +18,7 @@ namespace ProjectPanda.Pages
 		}
 
         #region Event handlers for the side menu
-        void Menu_btn2_Clicked(object sender, EventArgs e)
+       private void Menu_btn2_Clicked(object sender, EventArgs e)
         {
 
             Detail = new NavigationPage(new Settings());
@@ -26,13 +26,13 @@ namespace ProjectPanda.Pages
             IsPresented = false;
         }
 
-        void Menu_btn4_Clicked(object sender, EventArgs e)
+        private void Menu_btn4_Clicked(object sender, EventArgs e)
         {
             Detail = new NavigationPage(new SupportPagae());
             IsPresented = false;
         }
 
-        void Menu_btn3_Clicked(object sender, EventArgs e)
+        private void Menu_btn3_Clicked(object sender, EventArgs e)
         {
             // This button is for payment history
             Detail = new NavigationPage(new PaymentHistory());
@@ -42,8 +42,8 @@ namespace ProjectPanda.Pages
 
 
 
-        void Button_Clicked(object sender, EventArgs e)
-           => new NavigationPage();//doctorlist
+     //   void Button_Clicked(object sender, EventArgs e)
+       //    => new NavigationPage();//doctorlist
 
 
 
@@ -57,7 +57,7 @@ namespace ProjectPanda.Pages
         #endregion
 
 
-
+/*
         #region Event handelers for the tabbed pages
 
         void TapGestureRecognizerProfile(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace ProjectPanda.Pages
 
 
         #endregion
-
+    */
 
     }
 }

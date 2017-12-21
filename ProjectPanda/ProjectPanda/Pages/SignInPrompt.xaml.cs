@@ -33,7 +33,7 @@ namespace ProjectPanda.Pages
              */
 
 
-            await Navigation.PushAsync(new ProfilePage1());
+            await Navigation.PushModalAsync(new ProfilePage1());
 
           //  new  NavigationPage(new ProfilePage1()); To be removed 
            // Navigation.PushAsync(new DetailPageForFilling());
