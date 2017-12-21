@@ -272,9 +272,6 @@
     <BundleResource Include="Resources\outlook.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\backgroundImage.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\facebooksupport.PNG" />
   </ItemGroup>
   <ItemGroup>
@@ -327,6 +324,9 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\drawable\vansideview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\backgroundImage.png" />
   </ItemGroup>
   <Import Project="..\ProjectPanda\ProjectPanda.projitems" Label="Shared" Condition="Exists('..\ProjectPanda\ProjectPanda.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

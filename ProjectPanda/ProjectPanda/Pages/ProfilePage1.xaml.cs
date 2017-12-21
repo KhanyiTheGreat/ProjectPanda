@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ProjectPanda.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,7 +17,7 @@ namespace ProjectPanda.Pages
 			InitializeComponent ();
 		}
 
-
+        #region Event handlers for the side menu
         void Menu_btn2_Clicked(object sender, EventArgs e)
         {
 
@@ -54,6 +54,45 @@ namespace ProjectPanda.Pages
 
 
         }
+        #endregion
+
+
+
+        #region Event handelers for the tabbed pages
+
+        void TapGestureRecognizerProfile(object sender, EventArgs e)
+        {
+
+            var page = new ProfilePage();
+
+            PlaceHolder.Content = page.Content;
+
+
+        }
+
+        void TapGestureRecognizerDelivery(object sender, EventArgs e)
+        {
+            var page = new Delivery();
+
+            PlaceHolder.Content = page.Content;
+        }
+
+     
+        void TapGestureRecognizerAppointment(object sender, EventArgs e)
+        {
+            var page = new MyAppointments();
+            PlaceHolder.Content = page.Content;
+        }
+
+        void TapGestureRecognizerCamera(object sender, EventArgs e)
+        {
+            var page = new CamPage();
+            PlaceHolder.Content = page.Content;
+        }
+
+
+        #endregion
+
 
     }
 }
